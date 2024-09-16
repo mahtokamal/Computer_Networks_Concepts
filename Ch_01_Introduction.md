@@ -18,4 +18,5 @@
 
 
 
-## 1.2 
+## 1.2 Network Devices
+## 1.3 Network Topology
