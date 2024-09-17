@@ -42,14 +42,22 @@
 ![Untitled Diagram drawio](https://github.com/user-attachments/assets/6fa8684f-3fcf-43a8-9a53-1aea5cc05a32)
 
 ## 1.2 Network Types
-    PAN
-    LAN
-    MAN
-    WAN (Private)
-    WAN (Public) Internet
+    PAN - Personal Area Network
+    LAN -  Local Area Network
+    MAN - Metropolitan Area Network
+    WAN (Private) - Wide Area Network
+    WAN (Public) Internet -
     
 
-    Switch -
-    Router -
+    Switch - Connects devices in the same network.
+    Router - Connects devices of different network.
 
 ## 1.3 The Internet & DNS
+    The Internet - ISP 
+    
+    
+    Basics Services / Protocols on the Internet - Web Services(Web Server or WWW), Email Service(SMTP), Name Services(DNS)
+    
+    DNS
+    
+    DNS Communication Process
