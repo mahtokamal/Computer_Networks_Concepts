@@ -41,7 +41,15 @@
 
 ![Untitled Diagram drawio](https://github.com/user-attachments/assets/6fa8684f-3fcf-43a8-9a53-1aea5cc05a32)
 
-
-
 ## 1.2 Network Types
+    PAN
+    LAN
+    MAN
+    WAN (Private)
+    WAN (Public) Internet
+    
+
+    Switch -
+    Router -
+
 ## 1.3 The Internet & DNS
