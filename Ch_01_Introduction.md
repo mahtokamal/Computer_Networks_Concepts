@@ -43,5 +43,5 @@
 
 
 
-## 1.2 Network Devices
-## 1.3 Network Topology
+## 1.2 Network Types
+## 1.3 The Internet & DNS
