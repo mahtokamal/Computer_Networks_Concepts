@@ -52,7 +52,53 @@
     Switch - Connects devices in the same network.
     Router - Connects devices of different network.
 
-## 1.3 The Internet & DNS
+## 1.3 Network Devices
+
+    1. Hub - 
+    2. Repeater -
+    3. Bridge -
+    4. Switch -
+    5. Router -
+    6.
+
+    Devices based on OSI layers
+
+    Layer 7 : Application Layer
+            Devices:
+            
+    Layer 6 : Presentation Layer
+            Devices:
+    
+    Layer 5 : Session Layer
+            Devices:
+    
+    Layer 4 : Transport Layer
+            Devices:
+    
+    Layer 3 : Network Layer
+            Devices:
+            Routers
+            Firewalls
+            Layer 3 Switches
+            VPN devices
+    
+    Layer 2 : Data Link Layer
+            Devices:
+            Ethernet Switches
+            Bridges
+            Wireless Access Points(WAPs)
+            NICs
+   
+    Layer 1 : Physical Layer
+            Devices:
+            Cables (e.g., Co-axial cable, Fiber Optic, UTP, STP)
+            Hubs
+            Repeaters
+            NICs(Network Interface Card)
+    
+## 1.4 Network Topology
+
+## 1.5 The Internet & DNS
     The Internet - ISP 
     
     
