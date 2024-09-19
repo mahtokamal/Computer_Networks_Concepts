@@ -168,6 +168,22 @@
 
 ## 1.5 TCP/IP vs OSI Layer
 
+    OSI Layer -
+    Layer 7:
+    Layer 6:
+    Layer 5:
+    Layer 4:
+    Layer 3:
+    Layer 2:
+    Layer 1:
+
+    TCP/IP Layer -
+
+    Layer 4: Application layer (application,presentation,session layer)
+    Layer 3: Transport layer
+    Layer 2: Internet or Network layer
+    Layer 1: Network Access layer(data link,physical layer)
+
 ![Screenshot (630)](https://github.com/user-attachments/assets/2eaa585a-3cde-4704-b493-90fd706200a6)
 
 ## 1.5 The Internet & DNS
