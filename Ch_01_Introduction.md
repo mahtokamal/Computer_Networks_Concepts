@@ -17,8 +17,8 @@
       be shared with each other.
 
 
-    Any device which can share or receive the data is called a Node. 
-    Through which the information or data propagate is known as channels, It can be guided or unguided.
+    Node - Any device which can share or receive the data is called a Node. 
+    Channel - Through which the information or data propagate is known as channels, It can be guided(wired) or unguided(wireless).
     
     Goal of Networking
     - Shared hardware such as printers and input devices
@@ -169,16 +169,71 @@
 ## 1.5 TCP/IP vs OSI Layer
 
     OSI Layer -
+    
     Layer 7: Application layer
+             Function
+             Devices
+             Secure protocol
+             unsecure protocol
+             Attack scenario
+             prevention mechanism
+             Defense against attack
+    
     Layer 6: Presentation layer
+             Function
+             Devices
+             Secure protocol
+             unsecure protocol
+             Attack scenario
+             prevention mechanism
+             Defense against attack
+    
     Layer 5: Session layer
+             Function
+             Devices
+             Secure protocol
+             unsecure protocol
+             Attack scenario
+             prevention mechanism
+             Defense against attack
+    
     Layer 4: Transport layer
+             Function
+             Devices
+             Secure protocol
+             unsecure protocol
+             Attack scenario
+             prevention mechanism
+             Defense against attack
+    
     Layer 3: Network layer
+             Function
+             Devices
+             Secure protocol
+             unsecure protocol
+             Attack scenario
+             prevention mechanism
+             Defense against attack
+    
     Layer 2: Data link layer
+             Function
+             Devices
+             Secure protocol
+             unsecure protocol
+             Attack scenario
+             prevention mechanism
+             Defense against attack
+    
     Layer 1: Physical layer
+             Function
+             Devices
+             Secure protocol
+             unsecure protocol
+             Attack scenario
+             prevention mechanism
+             Defense against attack
 
     TCP/IP Layer -
-
     Layer 4: Application layer (application,presentation,session layer)
              Function
              Devices
