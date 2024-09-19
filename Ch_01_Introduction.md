@@ -24,17 +24,21 @@
     - Shared hardware such as printers and input devices
     - Shared data and information through the use of shared storage devices
     - Communications such as email, instant messaging, chat rooms, etc.
-    - Shared software, which is achieved by running applications on remote computers (Google GSuites, Microsoft office 365, Dropbox, GMail)
+    - Shared software, which is achieved by running applications on remote computers (Google GSuites, Microsoft office 365,
+      Dropbox, GMail)
 
-    wired Network - Cables consist of Coaxial, UTP, STP, Fibre Optics . Centralized devices will be Switch or Hub. Nowadays, Switch is preferred.
+    wired Network - Cables consist of Coaxial, UTP, STP, Fibre Optics . Centralized devices will be Switch or Hub. Nowadays,
+    Switch is preferred.
    
-    Wireless Network - Radio waves or frequency. It uses Wireless Access Point device (equivalent to Switch in wireless networking).
+    Wireless Network - Radio waves or frequency. It uses Wireless Access Point device (equivalent to Switch in wireless
+    networking).
 
     Hybrid Network - uses both wired and wireless devices. The Wireless Access Point Connects to the Switch using a Cable.
             The access point acts as a connection bridge between a wired and a wireless network.
 
     NIC - network interface card. Wi-Fi connections use wireless NICs (WLAN). Ethernet is the most popular wired LAN technology.
-    RG-58 - Coaxial Cable connectore. BNC connector for RG58 cable. (Bayonet Neil-Concelman, or sometimes British Naval Connector) connector 
+    RG-58 - Coaxial Cable connectore. BNC connector for RG58 cable. (Bayonet Neil-Concelman, or sometimes British Naval
+    Connector) connector 
     RJ-45 - Registered Jack 45.
     T-connector - Tee Connector. used to split radio frequency power from a cable into two
 
@@ -63,9 +67,9 @@
               devices, as a result all devices gets the unnecessary network traffic and causes network bandwidth problems.  
     
     2. Repeater - Operates at OSI Layer 1 i.e. Physical Layer. It just amplifies (or regenerate) the signal within a same network
-                  before the signals become too weak or corrupted to to extend the length to which the signal can be transmitted over
-                  the same network. When the signal becomes weak, they copy it bit by bit and regenerate it at its star topology
-                  connectors connecting following the original strength.
+                  before the signals become too weak or corrupted to to extend the length to which the signal can be transmitted
+                  over the same network. When the signal becomes weak, they copy it bit by bit and regenerate it at its star
+                  topology connectors connecting following the original strength.
     
     3. Bridge - A bridge operates at the OSI Layer 2 i.e. Data Link Layer. A bridge is a repeater, with add on the functionality
                 of filtering content by reading the MAC addresses of the source and destination. It is also used for interconnecting
