@@ -180,9 +180,40 @@
     TCP/IP Layer -
 
     Layer 4: Application layer (application,presentation,session layer)
+             Function
+             Devices
+             Secure protocol
+             unsecure protocol
+             Attack scenario
+             prevention mechanism
+             Defense against attack
+    
     Layer 3: Transport layer
+             Function
+             Devices
+             Secure protocol
+             unsecure protocol
+             Attack scenario
+             prevention mechanism
+             Defense against attack
+    
     Layer 2: Internet or Network layer
+             Function
+             Devices
+             Secure protocol
+             unsecure protocol
+             Attack scenario
+             prevention mechanism
+             Defense against attack
+    
     Layer 1: Network Access layer(data link,physical layer)
+             Function
+             Devices
+             Secure protocol
+             unsecure protocol
+             Attack scenario
+             prevention mechanism
+             Defense against attack
 
 ![Screenshot (630)](https://github.com/user-attachments/assets/2eaa585a-3cde-4704-b493-90fd706200a6)
 
