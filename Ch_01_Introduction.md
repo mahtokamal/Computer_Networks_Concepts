@@ -285,3 +285,6 @@
     DNS
     
     DNS Communication Process
+
+## 1.6 Network Ports
+
