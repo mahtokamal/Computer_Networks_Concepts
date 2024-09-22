@@ -24,12 +24,24 @@
 |     |    |    |    |  |   |   |   |
 
     Conversion Examples
-    - Let’s convert the address 199.83.20.5 to Binary using the Table. 
+    - Let’s convert the address 199.83.20.5 to Binary using the Table.
+| Decimal #| 128 | 64 | 32 | 16 | 8| 4 | 2 | 1 |
+|--|--   |--  |--  |--  |--| --| --| --|
+|199| 1    |  1  |  0  | 0   | 0 | 1  |  1 | 1  |
+|83|   0  |  1  |   0 |   1 | 0 | 0  | 1  | 1  |
+|20|    0 |   0 |   0 |   1 | 0 |  1 |   0| 0  |
+|5|   0  | 0   | 0   | 0   | 0 |  1 | 0  | 1  |
     - You start from left to right. Put a 1 for the bit value as long as you don’t exceed the Decimal number.
       For the 199, I put a “1” in the 128 bit but a “0” for the 83.
     - Subtract the bit value from the Decimal number and move to the next bit.
 
     - Let’s convert 1011 0110. 0101 1100.1100 0111.0001 1011 into Decimal.
+| Decimal #| 128 | 64 | 32 | 16 | 8| 4 | 2 | 1 |
+|--|--   |--  |--  |--  |--| --| --| --|
+|182| 1    |  0 |  1  | 1  | 0 | 1  |  1 | 0 |
+|92|   0  |  1  |   0 |   1 | 1 | 1  | 0  | 0  |
+|199|    1 |   1 |   0 |   0 | 0 |  1 |   1| 1  |
+|27|   0  | 0   | 0   | 1   | 1 |  0 | 1  | 1  |
     - Write the binary numbers into the table. 
     - Add the bit values that have a “1” in the column. For 182, add the 128 + 32 + 16 + 4 + 2 = 182.
 
