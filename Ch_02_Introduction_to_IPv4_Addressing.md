@@ -76,5 +76,69 @@
       take care of making copies and sending them to all receivers that are part of the group.
 
 ## 2.2 IPv4 Address Classes
+     IPv4 Address Classes
+     - IP addresses are split up into 4 main categories called Classes.
+     - These Classes are identified as A, B, C & D.
+     - The first 3 Classes [A, B & C] are used for Unicast communications [One-to-One] whereas the 4th class is used for
+       Multicast communications [One-To-Many]. 
+     - Multicast communications will be discussed later in the course.
+
+     Class A
+     - A Class A address has the following characteristics:
+         The first bit of the Address is set to “0”.
+         The first 8 bits represent the network bits, the next 24 bits are host bits. This is the default split between
+         Network and Host bits.
+     - There are less number of Class A networks in the world. Each one of the networks though has a lot of host on it. 
+     - As the first bit is fixed as “0” in the first Octet, the range of class A address is from 0000 0001 – 0111 1111.
+       [ 1 – 127].
+     - If an IP Address has a number between 1 – 127 in the first Octet, it is a Class A address. 
+     - You have a total of 127 Class A networks with a total of 16,777,214 hosts on each network.
+     - As there are a lot of hosts on each network, the network administrator has the ability to borrow host bits and
+       give them to the network bits. This is called Subnetting and will be discussed in detail.
+
+    Class B
+    - A Class B address has the following characteristics:
+        The first 2 bits of the Address is set to “10”.
+        The first 16 bits represent the network bits, the next 16 bits are host bits. This is the default split
+        between Network and Host bits.
+    - There are more Class B networks in the world. Each one of the networks though has a lesser number of hosts on
+      each network.
+    - As the first 2 bit are  fixed as “10” in the first Octet, the range of class B address is from
+      1000 0000 – 1011 1111. [ 128 – 191].
+    - If an IP Address has a number between 128 – 191 in the first Octet, it is a Class B address. 
+    - You have a total of 16,384 Class B networks with a total of 65,534 hosts on each network.
+    - The network administrator has the ability to borrow host bits and give them to the network bits. 
+
+    Class C
+    - A Class C address has the following characteristics:
+        The first 3 bits of the Address is set to “110”.
+        The first 24 bits represent the network bits, the next 8 bits are host bits. This is the
+        default split between Network and Host bits.
+    - There are more Class C networks in the world. Each one of the networks though has a lesser
+      number of hosts on each network.
+    - As the first 3 bit are  fixed as “110” in the first Octet, the range of class C address is
+      from 1100 0000 – 1101 1111. [ 192 – 223].
+    - If an IP Address has a number between 192 – 223 in the first Octet, it is a Class C address. 
+    - You have a total of 2,097,152 Class C networks with a total of 254 hosts on each network.
+    - The network administrator has the ability to borrow host bits and give them to the network bits.
+
+    Class D
+    - Class D addresses are used for multicasting applications. 
+    - The first 4 bit are  fixed as “1110” in the first Octet.
+    - The range of class D address is from 1110 0000 – 1110 1111. [ 224 – 239].
+    - Class D addresses are 32-bit network addresses, meaning that all the values within the range of
+      224.0.0.0 – 239.255.255.255 are used to uniquely identify multicast groups. 
+    - There are no host addresses within the Class D address space, since all the hosts within a group
+      share the group’s IP address for receiving purposes.
+
+    IP Address - Summary
+
+    
+
+
+
+
+
+
 
 ## 2.3 Private IPv4 Addressing
