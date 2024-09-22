@@ -133,12 +133,56 @@
 
     IP Address - Summary
 
-    
-
-
-
-
-
-
-
 ## 2.3 Private IPv4 Addressing
+    IPv4 Address Assignment
+    - IP Address Blocks are assigned to the ISP’s by Internet Assigned Numbers Authority (IANA).
+    - The ISP in turn will assign IP Addresses to the clients which could be individual users or
+      enterprises communicate to each other on the Internet. These addresses are known as Public Addresses.  
+    - The Internet has grown beyond anyone's expectations. 
+    - As a result of the explosion of the Internet, the IP Addresses are getting depleted. 
+    - To counter this concern, IANA, reserved a certain set of addresses that could be used internally
+      within the private networks. 
+    - These addresses can be used for communications within a Private network. They are defined in a
+      standards document called the RFC. The RFC number for Private addresses is RFC 1918.
+    - These addresses cannot be used on the Internet. They are assigned within the Private network and
+      translated to a Public address when the device wants to communicate to the Internet.
+
+    Private IP Address & NAT
+    - The ISP assigns Dynamic IP addresses to clients from a Pool of addresses. When the client is not
+      using the address, the address is returned back to the pool. It can be re-used for another client
+      that might require it at that moment.
+    - This allows you to use Public addresses more efficiently.
+    - If an individual has more devices in his premises like on a home network or office, the Private
+      addresses can be used internally. They are used when the devices want to communicate to each other
+      on the internal network.
+    - When an internal device wants to communicate to a device on the Internet, the Private address
+      is translated to the IP Address assigned to the device by the ISP.
+    - This process is called NAT. Multiple internal devices can share the same Public IP address on the
+      Internet. This allows you to conserve IP Addresses by assigning a single address for a multiple set
+      of Internal addresses.
+    - We will discuss NAT in detail in a later section.
+
+    Class A Private IP Range
+    - A single Class A address is reserved by IANA for use on the internal networks. 
+    - The Class A network that is reserved for Internal communications only is the 10.0.0.0/8 address.
+    - This addresses from this network cannot be used when communicating to devices on the Internet.
+    - If a device using this address range wants to communicate to devices on the Internet, it will need
+      to be translated using NAT.
+
+    Class B Private IP Range
+    - The following Class B networks are reserved by IANA for use on the internal networks:
+         172.16.0.0/16 – 172.31.0.0/24 [16 Networks]
+    - This address cannot be used when communicating to devices on the Internet.
+    - If a device using this address wants to communicate to devices on the Internet, it will need to be
+         translated using NAT.
+
+    Class C Private IP Range
+    - The following Class C networks are reserved by IANA for use on the internal networks:
+        192.168.0.0/24 – 192.168.255.0/24 [256 Networks]
+    - These network addresses cannot be used when communicating to devices on the Internet.
+    - If a device using this address range wants to communicate to devices on the Internet, it will need
+      to be translated using NAT.
+
+    Private IP Address & NAT
+
+    
