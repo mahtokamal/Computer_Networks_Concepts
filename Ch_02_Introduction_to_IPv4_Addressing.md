@@ -144,6 +144,15 @@
       share the group’s IP address for receiving purposes.
 
     IP Address - Summary
+| Class| 1st Octet Classifier | Class Rule | Address Structure | Subnet Mask | Networks | Maximum Hosts|
+|--    |--                    |--          |--                 |--           |--        | --           |
+|A| 1 - 127 |0XXXXXXX |N.H.H.H| 255.0.0.0  | 126 | 16,777,214 [2^24 - 2] |
+|B| 128 - 191 |10XXXXXX |N.N.H.H| 255.255.0.0  | 16,384 | 65,534 [2^16 -2] |
+|C| 192 - 223 |110XXXXX |N.N.N.H| 255.0.0.0  | 2,097,152 | 254 [2^8 – 2] |
+|D| 224 - 239 |1110XXXX |Multicast Address|
+|E| 240 - 255 |1111XXXX | Reserved for Experimental and Research|
+
+
 
 ## 2.3 Private IPv4 Addressing
     IPv4 Address Assignment
