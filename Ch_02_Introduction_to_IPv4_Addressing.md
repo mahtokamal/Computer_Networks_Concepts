@@ -192,14 +192,14 @@
 
     Class B Private IP Range
     - The following Class B networks are reserved by IANA for use on the internal networks:
-         172.16.0.0/16 – 172.31.0.0/24 [16 Networks]
+         172.16.0.0/16 – 172.31.0.0/16 [16 Networks]
     - This address cannot be used when communicating to devices on the Internet.
     - If a device using this address wants to communicate to devices on the Internet, it will need to be
          translated using NAT.
 
     Class C Private IP Range
     - The following Class C networks are reserved by IANA for use on the internal networks:
-        192.168.0.0/24 – 192.168.255.0/24 [256 Networks]
+        192.168.0.0/24 – 192.168.255.0/24 [254 Networks]
     - These network addresses cannot be used when communicating to devices on the Internet.
     - If a device using this address range wants to communicate to devices on the Internet, it will need
       to be translated using NAT.
