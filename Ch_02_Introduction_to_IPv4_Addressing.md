@@ -47,7 +47,7 @@
 
     
     IPv4 Address & Subnet Mask
-    - he IP Address has 2 parts, network and Host.
+    - Rhe IP Address has 2 parts, Network and Host.
     - This is similar to a street address. 
     - If we look at the address 150 Tasman Drive, it has the house number and the street name.
     - All the buildings on Tasman Drive will have Tasman Drive in their address. Each building will be identified with a unique
