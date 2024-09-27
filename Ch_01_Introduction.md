@@ -287,4 +287,5 @@
     DNS Communication Process
 
 ## 1.6 Network Ports
+    In the world of computer networking, network ports are like virtual doors that allow different applications and services to communicate with each other.
 
