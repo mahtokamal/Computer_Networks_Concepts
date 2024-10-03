@@ -290,5 +290,7 @@
     In the world of computer networking, network ports are like virtual doors that allow different applications and services to communicate with each other.
 
 They serve as specific addresses within a computer or network device, helping to direct incoming and outgoing data to the correct destinations.
+
+In cybersecurity, network ports are categorized as either secured or unsecured based on their use in secure protocols (such as those using encryption) or unsecured protocols (which transmit data in plaintext).
     
 
