@@ -292,5 +292,11 @@
 They serve as specific addresses within a computer or network device, helping to direct incoming and outgoing data to the correct destinations.
 
 In cybersecurity, network ports are categorized as either secured or unsecured based on their use in secure protocols (such as those using encryption) or unsecured protocols (which transmit data in plaintext).
+
+Secured Ports:
+HTTPS
+SSH
+
+Unsecured Ports:
     
 
