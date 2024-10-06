@@ -298,5 +298,7 @@ HTTPS
 SSH
 
 Unsecured Ports:
+Telnet
+HTTP
     
 
