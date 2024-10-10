@@ -295,11 +295,11 @@ In cybersecurity, network ports are categorized as either secured or unsecured b
 
 Secured Ports:
 HTTPS: 443
-SSH:
+SSH:22
 
 
 Unsecured Ports:
-Telnet
+Telnet:23
 HTTP:80
     
 
