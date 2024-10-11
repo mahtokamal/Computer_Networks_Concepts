@@ -169,6 +169,11 @@
             NICs(Network Interface Card)
     
 ## 1.4 Network Topology
+    Star
+    Bus
+    Ring
+    Mesh
+    Hybrid
 
 ## 1.5 TCP/IP vs OSI Layer
 
