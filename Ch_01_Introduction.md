@@ -301,10 +301,12 @@ In cybersecurity, network ports are categorized as either secured or unsecured b
 Secured Ports:
 HTTPS: 443
 SSH:22
+DNS: 53
 
 
 Unsecured Ports:
 Telnet:23
 HTTP:80
+FTP: 21
     
 
