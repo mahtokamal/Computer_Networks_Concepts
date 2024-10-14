@@ -308,5 +308,6 @@ Unsecured Ports:
 Telnet:23
 HTTP:80
 FTP: 21
+SMTP : 25
     
 
