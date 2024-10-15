@@ -302,6 +302,7 @@ Secured Ports:
 HTTPS: 443
 SSH:22
 DNS: 53
+RDP : 3389
 
 
 Unsecured Ports:
