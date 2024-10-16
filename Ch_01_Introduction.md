@@ -298,17 +298,20 @@ They serve as specific addresses within a computer or network device, helping to
 
 In cybersecurity, network ports are categorized as either secured or unsecured based on their use in secure protocols (such as those using encryption) or unsecured protocols (which transmit data in plaintext).
 
-Secured Ports:
-HTTPS: 443
-SSH:22
-DNS: 53
-RDP : 3389
+
+**Common Network Ports**
+
+|Unsecured Ports|Secured Ports|
+|----------|-------------|
+|FTP|FTPS|
+|SMTP|SMTPS|
+|HTTP|HTTPS|
+|POP3|POP3S|
+|TELNET|SSH|
+|IMAP|IMAPS|
+|DNS|DNS over TLS|
+|||
 
 
-Unsecured Ports:
-Telnet:23
-HTTP:80
-FTP: 21
-SMTP : 25
     
 
