@@ -316,6 +316,7 @@ These are typically used by protocols that encrypt communications to ensure priv
 |853|DNS over TLS|Secure DNS queries over TLS.|
 
 **Unsecured Ports**
+These are used by protocols that transmit data in plaintext, making them more vulnerable to attacks like eavesdropping or man-in-the-middle attacks.
 
 |Ports|Protcols|Descriptions|
 |----------|-------------|--|
