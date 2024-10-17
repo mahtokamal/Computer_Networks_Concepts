@@ -314,6 +314,26 @@ In cybersecurity, network ports are categorized as either secured or unsecured b
 |8443|HTTPS (alt)|Alternative port for HTTPS.|
 |853|DNS over TLS|Secure DNS queries over TLS.|
 
+**Unsecured Ports**
+
+|Ports|Protcols|Descriptions|
+|----------|-------------|--|
+|80|HTTP|Unencrypted web traffic.|
+|21|FTP|File Transfer Protocol, sends data and credentials in plaintext.|
+|23|TELNET|Unencrypted remote login service.|
+|25|SMTP|Unsecured Simple Mail Transfer Protocol.|
+|110|POP3|Unsecured version of Post Office Protocol for retrieving emails.|
+|143|IMAP|Unsecured Internet Message Access Protocol.|
+|53|DNS|Domain Name System, vulnerable to DNS spoofing.|
+|69|TFTP|Trivial File Transfer Protocol, no encryption or authentication.|
+|8443|HTTPS (alt)|Alternative port for HTTPS.|
+|445|SMB|Server Message Block, often a target for malware/worms.|
+|139|NetBIOS|Network Basic Input/Output System, can be exploited for attacks.|
+|161/162|SNMP|Simple Network Management Protocol, sends data without encryption.|
+|2049|NFS|Network File System, lacks encryption by default.|
+|123|NTP|Network Time Protocol, vulnerable to amplification attacks.|
+
+
 
 
     
