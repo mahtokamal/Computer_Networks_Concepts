@@ -299,7 +299,7 @@ They serve as specific addresses within a computer or network device, helping to
 In cybersecurity, network ports are categorized as either secured or unsecured based on their use in secure protocols (such as those using encryption) or unsecured protocols (which transmit data in plaintext).
 
 
-**Secured Ports**
+**Secured Ports**<br>
 These are typically used by protocols that encrypt communications to ensure privacy and integrity.
 
 |Ports|Protcols|Descriptions|
@@ -315,7 +315,7 @@ These are typically used by protocols that encrypt communications to ensure priv
 |8443|HTTPS (alt)|Alternative port for HTTPS.|
 |853|DNS over TLS|Secure DNS queries over TLS.|
 
-**Unsecured Ports**
+**Unsecured Ports**<br>
 These are used by protocols that transmit data in plaintext, making them more vulnerable to attacks like eavesdropping or man-in-the-middle attacks.
 
 |Ports|Protcols|Descriptions|
