@@ -299,18 +299,21 @@ They serve as specific addresses within a computer or network device, helping to
 In cybersecurity, network ports are categorized as either secured or unsecured based on their use in secure protocols (such as those using encryption) or unsecured protocols (which transmit data in plaintext).
 
 
-**Common Network Ports**
+**Secured Ports**
 
-|Unsecured Ports|Secured Ports|
-|----------|-------------|
-|FTP|FTPS|
-|SMTP|SMTPS|
-|HTTP|HTTPS|
-|POP3|POP3S|
-|TELNET|SSH|
-|IMAP|IMAPS|
-|DNS|DNS over TLS|
-|||
+|Ports|Protcols|Descriptions|
+|----------|-------------|--|
+|443|HTTPS|Secure web traffic using SSL/TLS encryption.|
+|22|SSH|Secure Shell, for secure remote administration and file transfer.|
+|465/587|SMTPS|Secure SMTP for sending encrypted emails.|
+|993|IMAPS|Secure version of IMAP (Internet Message Access Protocol).|
+|995|POP3S|Secure version of POP3 (Post Office Protocol).|
+|3389|RDP|Remote Desktop Protocol for secure remote access (with encryption).|
+|989/990|FTPS|Secure File Transfer Protocol over SSL/TLS.|
+|636|LDAPS|Secure LDAP (Lightweight Directory Access Protocol) over SSL.|
+|8443|HTTPS (alt)|Alternative port for HTTPS.|
+|853|DNS over TLS|Secure DNS queries over TLS.|
+
 
 
     
