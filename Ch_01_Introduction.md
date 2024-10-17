@@ -300,6 +300,7 @@ In cybersecurity, network ports are categorized as either secured or unsecured b
 
 
 **Secured Ports**
+These are typically used by protocols that encrypt communications to ensure privacy and integrity.
 
 |Ports|Protcols|Descriptions|
 |----------|-------------|--|
