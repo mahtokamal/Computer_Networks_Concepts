@@ -335,6 +335,10 @@ These are used by protocols that transmit data in plaintext, making them more vu
 |2049|NFS|Network File System, lacks encryption by default.|
 |123|NTP|Network Time Protocol, vulnerable to amplification attacks.|
 
+## Communication Medias
+Wired -
+
+Wireless -
 
 
 
