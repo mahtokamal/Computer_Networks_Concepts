@@ -336,7 +336,7 @@ These are used by protocols that transmit data in plaintext, making them more vu
 |123|NTP|Network Time Protocol, vulnerable to amplification attacks.|
 
 ## Communication Medias
-Wired -
+Wired -Wired communication technologies use physical cables to transmit data between devices.
 
 Wireless -
 
