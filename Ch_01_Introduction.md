@@ -338,7 +338,7 @@ These are used by protocols that transmit data in plaintext, making them more vu
 ## Communication Medias
 Wired -Wired communication technologies use physical cables to transmit data between devices.
 
-Wireless -
+Wireless - Wireless communication technologies use electromagnetic waves to transmit data without the need for physical cables. 
 
 
 
