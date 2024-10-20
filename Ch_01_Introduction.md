@@ -338,7 +338,14 @@ These are used by protocols that transmit data in plaintext, making them more vu
 ## Communication Medias
 Wired -Wired communication technologies use physical cables to transmit data between devices.
 
-Wireless - Wireless communication technologies use electromagnetic waves to transmit data without the need for physical cables. 
+Examples-
+Co-axial cable
+STP UTP
+Fiber Optics
+
+Wireless - Wireless communication technologies use electromagnetic waves to transmit data without the need for physical cables.
+
+Examples -
 
 
 
