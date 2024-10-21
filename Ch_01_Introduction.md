@@ -346,7 +346,10 @@ Fiber Optics
 Wireless - Wireless communication technologies use electromagnetic waves to transmit data without the need for physical cables.
 
 Examples -
-
+Wi-Fi
+Bluetooth 
+Cellular Network 
+Zigbee
 
 
     
