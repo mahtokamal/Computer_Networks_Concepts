@@ -340,7 +340,7 @@ Wired -Wired communication technologies use physical cables to transmit data bet
 
 Examples-
 Co-axial cable
-STP UTP
+STP UTP - ( Shielded and Unshielded Twisted Pair)
 Fiber Optics
 
 Wireless - Wireless communication technologies use electromagnetic waves to transmit data without the need for physical cables.
