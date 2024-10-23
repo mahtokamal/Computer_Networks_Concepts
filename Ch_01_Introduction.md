@@ -287,7 +287,7 @@
     
     Basics Services / Protocols on the Internet - Web Services(Web Server or WWW), Email Service(SMTP), Name Services(DNS)
     
-    DNS
+    DNS - Domain Name System
     
     DNS Communication Process
 
