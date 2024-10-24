@@ -73,6 +73,7 @@
                   before the signals become too weak or corrupted to to extend the length to which the signal can be transmitted
                   over the same network. When the signal becomes weak, they copy it bit by bit and regenerate it at its star
                   topology connectors connecting following the original strength.
+![IMG-20230828-WA0013](https://github.com/user-attachments/assets/105cf631-39e8-4098-b023-78ed5e6ebba9)
 
     
     3. Bridge - A bridge operates at the OSI Layer 2 i.e. Data Link Layer. A bridge is a repeater, with add on the functionality
