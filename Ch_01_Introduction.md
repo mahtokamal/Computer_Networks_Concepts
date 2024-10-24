@@ -65,11 +65,15 @@
               sent to all connected devices. In other words, the collision domain of all hosts connected through Hub remains
               one Hub. It is an unintelligent device that forwards the signal to all other ports and received by all connected
               devices, as a result all devices gets the unnecessary network traffic and causes network bandwidth problems.  
+
+![Screenshot (684)](https://github.com/user-attachments/assets/e66f11f0-8a2c-4e28-a1f5-9a96a65c892e)
+
     
     2. Repeater - Operates at OSI Layer 1 i.e. Physical Layer. It just amplifies (or regenerate) the signal within a same network
                   before the signals become too weak or corrupted to to extend the length to which the signal can be transmitted
                   over the same network. When the signal becomes weak, they copy it bit by bit and regenerate it at its star
                   topology connectors connecting following the original strength.
+
     
     3. Bridge - A bridge operates at the OSI Layer 2 i.e. Data Link Layer. A bridge is a repeater, with add on the functionality
                 of filtering content by reading the MAC addresses of the source and destination. It is also used for interconnecting
