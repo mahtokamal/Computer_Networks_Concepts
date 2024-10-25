@@ -79,6 +79,9 @@
     3. Bridge - A bridge operates at the OSI Layer 2 i.e. Data Link Layer. A bridge is a repeater, with add on the functionality
                 of filtering content by reading the MAC addresses of the source and destination. It is also used for interconnecting
                 two LANs working on the same protocol.
+
+![maxresdefault](https://github.com/user-attachments/assets/df36591f-7f39-41f6-a4b2-1446d04c5836)
+
     
     4. Switch (Layer 2 or Layer 3) - It works on OSI Layer 2 and uses MAC address(Media Access Control or Physical Address) of device
                                      to sends or forward the data to the another device to the destination device
@@ -88,6 +91,7 @@
                                      error checking before forwarding data, which makes it very efficient as it does not forward packets
                                      that have errors and forward good packets selectively to the correct port only.  In other words, the
                                      switch divides the collision domain of hosts, but the broadcast domain remains the same.
+![Screenshot (685)](https://github.com/user-attachments/assets/ccc058c8-9bca-489b-bbad-549fbba5dc19)
 
        Managed - Managed Switch have lots of option depending upon switch.
                  It has better security. We can segment our network into different VLAN, with some ports on one VLAN and other ports
