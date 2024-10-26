@@ -151,16 +151,26 @@
                   routers.
 ![img4](https://github.com/user-attachments/assets/87634ff9-8952-410f-abdf-a48ea23a6e10)
 
+![Screenshot (686)](https://github.com/user-attachments/assets/86da2144-d73c-467d-a9de-618925137bc3)
+
+
     8. Brouter -  It is also known as the bridging router is a device that combines features of both bridge and 
                   router. It can work either at the data link layer or a network layer. Working as a router, it
                   is capable of routing packets across networks and working as the bridge, it is capable of 
                   filtering local area network traffic.
+
+![download (1)](https://github.com/user-attachments/assets/12628f5b-caf3-4ddf-84ed-aad529b3fd3e)
+
 
     9. NIC - NIC or network interface card is a network adapter that is used to connect the computer to the 
              network. It is installed in the computer to establish a LAN.  It has a unique id that is written
              on the chip, and it has a connector to connect the cable to it. The cable acts as an interface 
              between the computer and the router or modem. NIC card is a layer 2 device which means that it
              works on both the physical and data link layers of the network model.
+
+![download (2)](https://github.com/user-attachments/assets/ad4019d4-6b2a-443d-ade2-3abf7140f7d0)
+
+![sddefault](https://github.com/user-attachments/assets/23035d6d-ac21-4d78-9b1a-e3175ffeeba9)
 
 
 
