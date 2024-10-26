@@ -140,13 +140,17 @@
     6. Router - Works on OSI Layer 3 and routes the data from one network to other using IP address (Source and
                 Destination). TP-Link router, has LAN ports(basically switch port). routes the traffic from LAN
                 to WAN. CISCO router, have switch ports and can act as a switch within LAN.
+![download](https://github.com/user-attachments/assets/f1f4b0ff-a6ad-4983-9cdb-4d4c2aa3e974)
+![router](https://github.com/user-attachments/assets/31a42e89-286b-4c1c-a7a9-5bea8c7f7249)
+
     
     7. Gateway -  A gateway, as the name suggests, is a passage to connect two networks that may work upon 
                   different networking models. They work as messenger agents that take data from one system,
                   interpret it, and transfer it to another system. Gateways are also called protocol converters
                   and can operate at any network layer. Gateways are generally more complex than switches or 
                   routers.
-    
+![img4](https://github.com/user-attachments/assets/87634ff9-8952-410f-abdf-a48ea23a6e10)
+
     8. Brouter -  It is also known as the bridging router is a device that combines features of both bridge and 
                   router. It can work either at the data link layer or a network layer. Working as a router, it
                   is capable of routing packets across networks and working as the bridge, it is capable of 
