@@ -118,6 +118,8 @@
                internet service into the home from internet service providers (ISPs). Some ISPs offer a combination of
                modem-router unit, known as a gateway.
 
+
+
                Most ISPs will either rent you a modem or sell you one outright. Many modems nowadays are "all-in-one"
                devices that also include a router, although you can still purchase a modem and router separately.
 
@@ -131,6 +133,9 @@
                
                Cable — A modem that uses a cable TV line to connect to an ISP. This is the most common type of
                        modem connection.
+
+![Modembak](https://github.com/user-attachments/assets/c9943c24-bec3-406f-b386-0a94059864f3)
+
     
     6. Router - Works on OSI Layer 3 and routes the data from one network to other using IP address (Source and
                 Destination). TP-Link router, has LAN ports(basically switch port). routes the traffic from LAN
