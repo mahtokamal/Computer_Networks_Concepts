@@ -1,7 +1,7 @@
 # 1. Introduction to Networking
 
 ## 1.1 Introduction to Networks
-    What is Network?
+    What is a Computer Network?
     The connection between two or more than two devices, nodes or points whether the link is wired or wireless
     is known to be a Network.
 
@@ -273,50 +273,370 @@
     
     Layer 7: Application layer 
     
-             Function -
-             Devices -
-             Secure protocol -
-             unsecure protocol -
-             Attack scenario -
-             prevention mechanism -
-             Defense against attack -
+             Function - The Application Layer (Layer 7) is the topmost layer of the OSI model and provides the
+                        interface between the network services and end-user applications. This layer enables 
+                        end-users to interact with software applications for data exchange and communication 
+                        over the network, and it directly supports services such as email, file transfer, and
+                        web browsing.
+
+                        Resource Sharing: Provides a platform for sharing network resources like files, printers,
+                        or databases.
+                       
+                       Remote Access: Allows users to access applications on remote systems.
+                       
+                       File and Data Transfer: Facilitates secure and organized data transfers between devices.
+                       
+                       Email and Messaging: Manages the transfer and storage of messages through email protocols.
+                       
+                       For example, when a user logs into a website, the Application Layer processes the login
+                       request, uses an HTTP or HTTPS connection, and returns the requested page to the user.
+                        
+             Devices - Devices associated with the Application Layer include:
+
+                       Web Servers: Handle HTTP and HTTPS requests for web services.
+                       Email Servers: Manage email traffic using SMTP, IMAP, or POP protocols.
+                       DNS Servers: Translate domain names into IP addresses, enabling web browsing.
+                       File Servers: Manage file access and transfers within a network.
+
+             
+             Secure protocol - HTTPS (HyperText Transfer Protocol Secure): Encrypts web traffic, securing
+                               communication between users and web servers. Widely used for secure web browsing.
+                               
+                              FTPS and SFTP (Secure File Transfer Protocol): Secure methods for transferring files,
+                              with encryption for data protection.
+                              
+                              SMTPS (Simple Mail Transfer Protocol Secure): Secures email communication by adding
+                              encryption and authentication.
+
+             
+             unsecure protocol - HTTP (HyperText Transfer Protocol): Transfers web content without encryption, 
+                                 making it vulnerable to interception.
+                                 FTP (File Transfer Protocol): Transfers files without encryption, exposing file
+                                 contents and user credentials to attackers.
+                                 
+                                 SMTP (Simple Mail Transfer Protocol): Transmits emails without encryption,
+                                 allowing potential access to message content if intercepted.
+
+             
+             
+             Attack scenario - A common attack at the Application Layer is the Phishing Attack:
+
+                               Phishing Attack Scenario: Phishing attacks use fraudulent messages or websites
+                               to deceive users into disclosing sensitive information such as passwords or credit
+                               card details. Attackers often impersonate legitimate services (e.g., a bank) to trick users.
+                               
+                               Example: An attacker sends an email posing as a financial institution, urging the user to log
+                               in and verify their account details. When the user clicks the link, they are directed to a fake
+                               site that captures their credentials.
+
+             
+             prevention mechanism - Email Filtering and Anti-Phishing Software: Scans and filters out suspicious
+                                    emails to protect users from phishing.
+                                    
+                                    Multi-Factor Authentication (MFA): Adds additional verification steps, making
+                                    it difficult for attackers to access accounts even if they obtain login credentials.
+                                    
+                                    User Education and Awareness: Educating users about phishing tactics helps them
+                                    recognize and avoid fraudulent websites or emails.
+             
+             Defense against attack - SSL/TLS Certificates: Ensure that websites are legitimate and provide encryption,
+                                      helping users verify the authenticity of websites.
+                                      
+                                      DNS Security Extensions (DNSSEC): Protects DNS responses from being tampered
+                                      with, reducing the risk of phishing and DNS spoofing.
+                                      
+                                      Regular Security Audits: Helps identify potential vulnerabilities in web
+                                      applications and closes security gaps.
     
     Layer 6: Presentation layer
-             Function -
-             Devices -
-             Secure protocol -
-             unsecure protocol -
-             Attack scenario -
-             prevention mechanism -
-             Defense against attack -
+    
+             Function - The Presentation Layer (Layer 6) is responsible for data formatting, translation, 
+                        encryption, and compression, ensuring that data is presented to the Application Layer
+                        in a readable format for both the sender and receiver. It essentially acts as a translator
+                        and encoder/decoder between the data generated by the application and the data transmitted
+                        over the network.
+
+                        Data Translation: Converts data between various formats such as ASCII, EBCDIC, or different
+                        image, audio, and video formats.
+                        
+                        Data Encryption and Decryption: Secures data by encrypting it before transmission and
+                        decrypting it at the destination.
+                        
+                        Data Compression and Decompression: Reduces data size for efficient transmission and 
+                        decompresses data on the receiving end for use.
+                        Character Encoding: Transforms data into standardized character sets like UTF-8 or ASCII.
+                        
+                        For example, when a user uploads an image file, the Presentation Layer may compress the file
+                        before sending it across the network and then decompress it on the receiver’s end.
+
+             
+             Devices -  The Presentation Layer doesn’t involve specific hardware but includes:
+
+                        Encryption and Decryption Gateways: Secure servers or software components responsible
+                        for encrypting/decrypting data before it passes through the network.
+                        
+                        Data Format Converters: Software that translates file formats, such as media codecs for
+                        audio and video streaming.
+                        
+                        Compression and Decompression Software: Used in multimedia applications where data needs
+                        to be compressed (like JPEG or MP3 codecs).
+             
+             Secure protocol - SSL/TLS (Secure Sockets Layer / Transport Layer Security): While SSL/TLS operates
+                               primarily between the Presentation and Transport layers, it is responsible for 
+                               encrypting and decrypting data at the Presentation Layer. TLS secures data 
+                               transmitted between web browsers and servers (HTTPS).
+                               
+                               MIME (Multipurpose Internet Mail Extensions): MIME is a standard for encoding 
+                               multimedia data in emails, allowing attachments to be securely and efficiently transmitted.
+             
+             unsecure protocol - Telnet (Unencrypted Text Transfer): Telnet is an example of an unencrypted protocol
+                                 at this layer. It transmits data in plaintext, making it vulnerable to interception.
+                                 
+                                 FTP (File Transfer Protocol): FTP transmits files in plaintext without encryption,
+                                 exposing data during file transfers to potential attackers.
+             
+             Attack scenario - A common attack at the Presentation Layer is Man-in-the-Middle (MITM) Attacks that
+                               target unencrypted data:
+
+                               MITM Attack Scenario: In an MITM attack, an attacker intercepts data being transmitted
+                               between two devices. If encryption is not in place, the attacker can read, modify, or
+                               inject malicious data into the communication.
+                               
+                               Example: A user logs into an email account over HTTP (unencrypted) in a public network.
+                               An attacker intercepts the login credentials and gains unauthorized access.
+
+             
+             prevention mechanism - Use of Strong Encryption Protocols (SSL/TLS): Encrypts data to prevent 
+                                    interception and ensures that only authorized parties can read the data.
+                                    
+                                    Digital Certificates and Public Key Infrastructure (PKI): Verifies the 
+                                    authenticity of devices and prevents attackers from impersonating legitimate users.
+                                    
+                                    Encoding Standards: By ensuring consistent character encoding (e.g., UTF-8), the 
+                                    Presentation Layer prevents misinterpretations or alterations that attackers might exploit.
+             
+             Defense against attack - TLS Encryption: Encrypts data to prevent eavesdropping and tampering, 
+                                      ensuring secure data presentation and transmission.
+                                      
+                                      Use of HTTPS: Enforces encrypted communication between clients and servers
+                                      to protect against MITM attacks.
+                                      
+                                      Intrusion Detection Systems (IDS): Monitors for suspicious activities and
+                                      alerts administrators to potential MITM attacks or data tampering attempts.
     
     Layer 5: Session layer ()
-             Function -
-             Devices -
-             Secure protocol -
-             unsecure protocol -
-             Attack scenario -
-             prevention mechanism -
-             Defense against attack -
+    
+             Function - The Session Layer (Layer 5) is responsible for establishing, maintaining, and 
+                        terminating communication sessions between applications on different devices. 
+                        It manages and controls the dialogue between computers by setting up, coordinating,
+                        and ending interactions, making it possible for devices to exchange data efficiently
+                        in a synchronized way.
+
+                        Session Establishment, Maintenance, and Termination: Manages the start, continuation,
+                        and end of communication sessions between devices.
+                        
+                        Synchronization: Adds checkpoints in data streams to help resume communication smoothly
+                        in case of interruptions.
+                        Dialog Control: Controls the mode of communication, determining whether it is 
+                        half-duplex (one-way at a time) or full-duplex (two-way simultaneously).
+                        
+                        Session Recovery: Manages reconnection and data recovery processes if there is an 
+                        unexpected interruption in communication.
+                        This layer is especially important in applications where continuous, long-running data 
+                        transfers or multimedia sessions are common, such as in video calls and streaming.
+
+             
+             Devices - While the Session Layer does not involve specific hardware devices (like routers or switches),
+                       some software components work at this layer:
+
+                       Application Servers: Hosts for applications that need to maintain sessions, such as video
+                       conferencing and file transfer servers.
+                       
+                       Middleware: Components like session brokers or session managers in distributed computing
+                       environments handle sessions between clients and servers.
+
+             
+             Secure protocol - NetBIOS over TCP/IP (NBT) with Security Extensions: Helps with the establishment 
+                               of session-level connections between devices in Windows networks, allowing for 
+                               secure communication and access control.
+                               
+                               RPC (Remote Procedure Call) over TLS: Allows remote execution of functions over 
+                               a network securely by encrypting the session data, ensuring that only authenticated
+                               and authorized calls are processed.
+             
+             unsecure protocol - NetBIOS (Network Basic Input/Output System): Without encryption or authentication,
+                                 NetBIOS can be exploited by attackers to access shared resources within a network.
+                                 
+                                 RPC without TLS: Transmits remote procedure calls in cleartext, making it vulnerable
+                                 to interception and misuse by attackers.
+
+             
+             Attack scenario - Session Hijacking Attack: In this attack, an attacker takes control of an ongoing
+                               session between two devices. By capturing session tokens or session IDs, an 
+                               attacker can impersonate a legitimate user and gain unauthorized access to resources.
+                               
+                               Example: During a video conference session, an attacker intercepts the session 
+                               token and replays it, allowing them to join the session without authorization, 
+                               potentially gaining access to confidential discussions.
+             
+             prevention mechanism - Session Timeout and Re-authentication: Sets an expiration for session tokens,
+                                    requiring users to re-authenticate if they remain inactive, reducing the 
+                                    window of opportunity for an attacker.
+                                    
+                                    Token Encryption and Validation: Encrypts session tokens and validates them
+                                    on the server side, ensuring only authorized users can use valid tokens.
+                                    
+                                    Multi-Factor Authentication (MFA): Adds additional authentication steps 
+                                    during session establishment to prevent attackers from hijacking sessions.
+             
+             Defense against attack - Secure Protocols (e.g., TLS): Encrypts session data to prevent interception
+                                      and modification by attackers.
+                                      Token Rotation and Validation: Regularly updates session tokens and verifies
+                                      their legitimacy, making it harder for attackers to use stolen tokens.
+                                      
+                                      Intrusion Detection and Prevention Systems (IDPS): Monitors session behavior
+                                      and detects anomalies, such as unexpected replays or session takeovers.
     
     Layer 4: Transport layer (Data = Segments)
     
-             Function -
-             Devices -
-             Secure protocol -
-             unsecure protocol -
-             Attack scenario -
-             prevention mechanism -
-             Defense against attack -
+             Function - The Transport Layer (Layer 4) is responsible for reliable data transfer between devices
+                        by managing data segmentation, flow control, error handling, and ensuring data integrity.
+                        It establishes, maintains, and terminates connections between sender and receiver, making
+                        sure that data reaches its destination correctly and in sequence.
+
+                        Segmentation and Reassembly: Breaks large data packets into smaller segments and 
+                        reassembles them on the receiving end.
+                        Connection Establishment and Termination: Sets up and tears down connections 
+                        between applications.
+                        Flow Control: Manages data transmission rates to prevent network congestion and 
+                        ensure efficient transfer.
+                        Error Detection and Correction: Detects transmission errors and requests retransmission
+                        if necessary to maintain data integrity.
+                        
+                        For example, when downloading a large file, the Transport Layer segments the file into
+                        smaller packets, sends them in sequence, and reassembles them at the destination.
+
+
+
+             Devices - Firewall Appliances: Can operate at the Transport Layer to block or allow specific port
+                       numbers or protocols.
+                       
+                       Network Address Translators (NAT): Often involved in managing port numbers and 
+                       connections for multiple devices.
+                       
+                       Load Balancers: Operate at the Transport Layer to distribute network traffic across 
+                       multiple servers for scalability and redundancy.
+                       
+             Secure protocol - TLS (Transport Layer Security): Encrypts data at the Transport Layer to protect it
+                               during transmission and prevent eavesdropping or tampering.
+                               
+                               DTLS (Datagram Transport Layer Security): A variant of TLS designed for 
+                               datagram-based protocols (like UDP), commonly used in VoIP or online gaming for 
+                               secure, real-time data transmission.
+
+             
+             unsecure protocol - TCP (Transmission Control Protocol): Manages connections and guarantees data
+                                 delivery but does not inherently encrypt data, making it susceptible to interception.
+                                 
+                                 UDP (User Datagram Protocol): Provides fast but connectionless and unencrypted
+                                 data transmission. Used in real-time applications like online gaming and streaming,
+                                 which are sensitive to latency but prioritize speed over security.
+
+             Attack scenario - TCP SYN Flood Attack Scenario: In this attack, the attacker initiates multiple 
+                               TCP connection requests to a server without completing the handshake process. 
+                               The server allocates resources to each incomplete connection, eventually 
+                               overwhelming the server and preventing legitimate users from accessing it.
+                               
+                               Example: An attacker sends numerous SYN packets to a web server. Since the attacker
+                               never completes the handshake, the server's resources are drained as it waits for 
+                               completion, causing service disruption.
+             
+             prevention mechanism - SYN Cookies: A method to handle initial SYN packets without allocating 
+                                    resources immediately, allowing the server to verify the connection request
+                                    before committing resources.
+                                    
+                                    Rate Limiting: Controls the number of incoming requests over a specified 
+                                    period to prevent overwhelming the server.
+                                    
+                                    Firewall Rules: Firewalls can be configured to block suspicious IP addresses
+                                    or limit connection attempts to prevent abuse.
+             
+             Defense against attack - Intrusion Prevention Systems (IPS): Monitors network traffic in real-time
+                                      to detect and respond to SYN floods or other Transport Layer attacks.
+                                      
+                                      Load Balancers: Distribute incoming requests across multiple servers, making
+                                      it harder for attackers to overwhelm a single server with SYN floods.
+                                      
+                                      TCP RST Packets: Sends reset packets to close half-open connections and free
+                                      up server resources.
+
+
     
     Layer 3: Network layer (Data = Packets)
-             Function -
-             Devices -
-             Secure protocol -
-             unsecure protocol -
-             Attack scenario -
-             prevention mechanism -
-             Defense against attack -
+             Function - The Network Layer (Layer 3) is responsible for the routing, forwarding, and addressing 
+                        of data packets across multiple interconnected networks. It provides mechanisms for 
+                        packet switching, logical addressing, and routing so that data can travel across various
+                        paths in an internetworked environment to reach its destination.
+
+                        Routing: Determines the best path for data packets to travel from source to destination
+                        across networks.
+                        
+                        Logical Addressing: Uses IP addresses to uniquely identify each device on a network, 
+                        allowing packets to find their intended destination.
+                        
+                        Fragmentation and Reassembly: If data packets are too large for the transmission medium,
+                        the Network Layer fragments them and reassembles them at the destination.
+                        
+                        Packet Forwarding: Moves packets through routers along the network path.
+
+             Devices - Routers and layer 3 Switch
+             
+             Secure protocol - IPsec (Internet Protocol Security): A suite of protocols that provides authentication,
+                               integrity, and encryption for IP packets, often used in VPNs (Virtual Private Networks)
+                               to secure data traveling across public or insecure networks.
+
+             
+             unsecure protocol - IPv4 (Internet Protocol version 4): While essential for addressing and routing, 
+                                 IPv4 lacks inherent security mechanisms like encryption or authentication, making
+                                 it vulnerable to various attacks, including spoofing and sniffing.
+                                 
+                                 ICMP (Internet Control Message Protocol): While useful for diagnostic tools 
+                                 like ping, ICMP is often exploited for network reconnaissance and Denial of 
+                                 Service (DoS) attacks.
+
+                                 IPv6
+             
+             Attack scenario - IP Spoofing Attack: In IP spoofing, an attacker forges the source IP address of 
+                               data packets, making them appear as though they come from a trusted source. This
+                               can allow the attacker to bypass network security controls, impersonate trusted 
+                               devices, or launch further attacks like Distributed Denial of Service (DDoS).
+                               
+                               Example: An attacker might send packets to a target server with a spoofed IP address
+                               of a trusted device. The server, believing the packets are legitimate, responds and
+                               potentially allows unauthorized access or redirects the attacker's traffic to a victim.
+             
+             prevention mechanism - Ingress and Egress Filtering: Network routers and firewalls can be configured to 
+                                    filter incoming and outgoing traffic based on trusted IP addresses, preventing
+                                    packets with suspicious or forged IP addresses from entering or exiting the network.
+                                    
+                                    Use of IPsec: Encrypting and authenticating IP packets with IPsec helps ensure
+                                    that only authorized devices communicate, protecting against IP spoofing and
+                                    similar attacks.
+                                    Access Control Lists (ACLs): ACLs on routers or firewalls allow only specified
+                                    IP addresses or ranges to communicate, blocking spoofed or unauthorized addresses.
+             
+             Defense against attack - Router Configuration and Network Monitoring: Configure routers to block 
+                                      invalid or private IP addresses on public interfaces. Employ network 
+                                      monitoring tools that detect and alert on anomalies in IP traffic.
+                                      
+                                      Packet Filtering Firewalls: Implement firewalls that inspect and filter 
+                                      packets based on IP header information, helping to block malicious IP 
+                                      addresses or suspicious patterns.
+                                      Intrusion Detection and Prevention Systems (IDS/IPS): IDS/IPS tools monitor
+                                      network traffic for patterns associated with IP spoofing or DDoS and can 
+                                      automatically block or alert on such activities.
+
+
     
     Layer 2: Data link layer (Data = Frames)
     
