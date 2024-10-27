@@ -220,70 +220,219 @@
 
 ## 1.5 TCP/IP vs OSI Layer
 
-    OSI Layer -
+    OSI Layer - The OSI reference model was developed by ISO – ‘International Organization for Standardization ‘,
+                in the year 1984.The OSI model, created in 1984 by ISO , is a reference framework that explains 
+                the process of transmitting data between computers. OSI stands for Open Systems Interconnection ,
+                where open stands to say non-proprietary. All these 7 layers work collaboratively to transmit the 
+                data from one person to another across the globe.
+
+                The OSI model provides a theoretical foundation for understanding network communication.
+
     
-    Layer 7: Application layer
-             Function
-             Devices
-             Secure protocol
-             unsecure protocol
-             Attack scenario
-             prevention mechanism
-             Defense against attack
+    Application Layer: Applications create the data.
+    Presentation Layer: Data is formatted and encrypted.
+    Session Layer: Connections are established and managed.
+    Transport Layer: Data is broken into segments for reliable delivery.
+    Network Layer : Segments are packaged into packets and routed.
+    Data Link Layer: Packets are framed and sent to the next device.
+    Physical Layer: Frames are converted into bits and transmitted physically.
+
+    Each layer adds specific information to ensure the data reaches its destination correctly, and these steps
+    are reversed upon arrival.
+
+![cn1](https://github.com/user-attachments/assets/8ed293f9-8e94-42ef-81fd-d8a726150318)
+
+    Example Scenarios - 
+
+    Alex sends an e-mail to his friend David.
+
+    Step 1: Alex interacts with e-mail application like Gmail , outlook , etc. Writes his email to send. (This
+            happens in Layer 7: Application layer )
+            
+    Step 2: Mail application prepares for data transmission like encrypting data and formatting it for transmission.
+            (This happens in Layer 6: Presentation Layer )
+    
+    Step 3: There is a connection established between the sender and receiver on the internet. (This happens in 
+            Layer 5: Session Layer )
+    
+    Step 4: Email data is broken into smaller segments. It adds sequence number and error-checking information to
+            maintain the reliability of the information. (This happens in Layer 4: Transport Layer )
+    
+    Step 5: Addressing of packets is done in order to find the best route for transfer. (This happens in Layer 3:
+            Network Layer )
+    
+    Step 6: Data packets are encapsulated into frames, then MAC address is added for local devices and then it 
+            checks for error using error detection. (This happens in Layer 2: Data Link Layer )
+    
+    Step 7: Lastly Frames are transmitted in the form of electrical/ optical signals over a physical network 
+            medium like ethernet cable or WiFi.
+    
+    After the email reaches the receiver i.e. David, the process will reverse and decrypt the e-mail content. At
+    last, the email will be shown on David’s email client.
+
+    
+    Layer 7: Application layer 
+    
+             Function -
+             Devices -
+             Secure protocol -
+             unsecure protocol -
+             Attack scenario -
+             prevention mechanism -
+             Defense against attack -
     
     Layer 6: Presentation layer
-             Function
-             Devices
-             Secure protocol
-             unsecure protocol
-             Attack scenario
-             prevention mechanism
-             Defense against attack
+             Function -
+             Devices -
+             Secure protocol -
+             unsecure protocol -
+             Attack scenario -
+             prevention mechanism -
+             Defense against attack -
     
-    Layer 5: Session layer
-             Function
-             Devices
-             Secure protocol
-             unsecure protocol
-             Attack scenario
-             prevention mechanism
-             Defense against attack
+    Layer 5: Session layer ()
+             Function -
+             Devices -
+             Secure protocol -
+             unsecure protocol -
+             Attack scenario -
+             prevention mechanism -
+             Defense against attack -
     
-    Layer 4: Transport layer
-             Function
-             Devices
-             Secure protocol
-             unsecure protocol
-             Attack scenario
-             prevention mechanism
-             Defense against attack
+    Layer 4: Transport layer (Data = Segments)
     
-    Layer 3: Network layer
-             Function
-             Devices
-             Secure protocol
-             unsecure protocol
-             Attack scenario
-             prevention mechanism
-             Defense against attack
+             Function -
+             Devices -
+             Secure protocol -
+             unsecure protocol -
+             Attack scenario -
+             prevention mechanism -
+             Defense against attack -
     
-    Layer 2: Data link layer
-             Function
-             Devices
-             Secure protocol
-             unsecure protocol
-             Attack scenario
-             prevention mechanism
-             Defense against attack
+    Layer 3: Network layer (Data = Packets)
+             Function -
+             Devices -
+             Secure protocol -
+             unsecure protocol -
+             Attack scenario -
+             prevention mechanism -
+             Defense against attack -
     
-    Layer 1: Physical layer
-             Function
-             Devices
-             Secure protocol
-             unsecure protocol
-             Attack scenario
-             prevention mechanism
-             Defense against attack
+    Layer 2: Data link layer (Data = Frames)
+    
+             Function - The Data Link Layer (Layer 2) is responsible for the node-to-node transfer of data and
+                        error detection and correction. It ensures that data frames are reliably transmitted 
+                        between nodes on the same network or local area network (LAN) by managing how data 
+                        packets are encoded, decoded, and transmitted over a physical medium.
+
+                        Framing: Divides data into frames for easier handling and transmission.
+                        Error Detection and Correction: Uses error-detection codes to identify and correct 
+                        errors during transmission.
+                        Flow Control: Ensures that data flows smoothly, preventing faster devices from 
+                        overwhelming slower ones.
+                        MAC Addressing: Assigns a unique Media Access Control (MAC) address to each device, 
+                        enabling local addressing.
+                        
+                        The Data Link Layer is divided into two sublayers:
+
+                        Logical Link Control (LLC): Responsible for flow control and error handling.
+                        Media Access Control (MAC): Manages physical addressing and access to the transmission
+                        medium.
+
+             
+             Devices - Switches, Bridges, NICs
+             
+             Secure protocol - 802.1X: A secure access control protocol that authenticates devices attempting to
+                               connect to a LAN or WLAN. It helps prevent unauthorized devices from accessing 
+                               network resources.
+
+                               
+             
+             unsecure protocol - ARP is essential in IP networking to map IP addresses to MAC addresses. However,
+                                 it lacks authentication and is vulnerable to ARP spoofing and ARP cache poisoning 
+                                 attacks.
+             
+             Attack scenario - ARP Spoofing Attack: The attacker sends fake ARP messages to associate their MAC 
+                               address with the IP address of another device (like a gateway or server). This 
+                               allows the attacker to intercept, modify, or stop data destined for the 
+                               legitimate device.
+                               
+                               Example: In a corporate LAN, an attacker could impersonate the network gateway by
+                               spoofing its IP address, allowing the attacker to intercept data, alter its 
+                               contents, or even perform a denial of service attack.
+             
+             prevention mechanism - Port Security: Configuring switch ports to only allow specific MAC addresses
+                                    to connect, limiting unauthorized device access.
+                                    Dynamic ARP Inspection (DAI): Verifies ARP requests and responses against a 
+                                    trusted table of known IP-MAC pairs to prevent spoofing.
+                                    Use of Virtual LANs (VLANs): Segments network traffic and limits access based
+                                    on logical groupings, reducing the impact of potential attacks.
+
+             
+             Defense against attack - Implement 802.1X Authentication: Ensures only authenticated devices can 
+                                      connect to the network, which helps prevent unauthorized access and 
+                                      spoofing.
+                                      Network Monitoring Tools: Use intrusion detection systems (IDS) and 
+                                      intrusion prevention systems (IPS) to detect and mitigate anomalies in 
+                                      network traffic.
+                                      MAC Address Filtering: Allows only specified MAC addresses to communicate,
+                                      reducing exposure to unauthorized devices.
+
+    
+    Layer 1: Physical layer(Data = Bits)
+    
+             Function - The Physical Layer is responsible for the actual physical connection between devices and
+                        the transmission of raw binary data (bits) as electrical, optical, or radio signals.
+
+                        Data Encoding and Signaling: Converting binary data to signals for transmission over the
+                        medium.
+                        Bit Synchronization: Ensuring sender and receiver are in sync for data interpretation.
+                        Transmission Mode: simplex (one way), half-duplex (two-way, one direction at a time), and
+                        full-duplex (two-way, simultaneous).
+                        
+             Devices - Hubs, Repeaters, NICs, Cables & Connectors (Ethernet Cat5 or Cat6), fiber optic cables,
+                       and coaxial cables
+             
+             Secure protocol - Since this layer deals with the transmission medium, it doesn’t handle encryption
+                               or security protocols at a data level. Physical security measures are implemented
+                               instead.
+             
+             unsecure protocol - Ethernet (at the lowest layer): At the basic level, Ethernet cables and 
+                                 infrastructure don't inherently include encryption, leaving them vulnerable to
+                                 physical tapping or interception.
+
+                                 Wi-Fi Signal Jamming through interference.
+             Attack scenario - Wiretapping Attack: An attacker physically connects a device to a cable or 
+                               intercepts wireless signals to capture data being transmitted. This is easier with
+                               unshielded Ethernet cables or unsecured wireless connections.
+                               
+                               Example: In a data center, an attacker gains access to network cables and uses 
+                               hardware to capture data transmitted through them, potentially stealing sensitive 
+                               information like usernames, passwords, or proprietary data.
+             
+             prevention mechanism - Use Shielded Cables and Secure Enclosures: Shielded twisted-pair cables or
+                                    fiber optic cables are harder to tap and protect against electromagnetic 
+                                    interference.
+                                    
+                                    Physical Security Measures: Restrict physical access to networking equipment
+                                    through locks, CCTV, secure data cabinets, and surveillance.
+                                    Wireless Security Configurations: For wireless connections, use encryption 
+                                    protocols like WPA3 to secure data transmitted over radio waves.
+             
+             Defense against attack - Regular Physical Security Audits: Conduct audits to ensure only authorized
+                                      personnel can access networking hardware.
+                                      Network Monitoring for Unusual Activity: Employ Intrusion Detection Systems
+                                      (IDS) to monitor and alert on unusual data traffic patterns that might 
+                                      indicate unauthorized data capturing. Tamper-Evident Seals and Locks: Use
+                                      tamper-evident mechanisms on physical enclosures to detect if hardware or 
+                                      cables have been accessed or altered.
+
+> [!IMPORTANT]
+> Network Layer, Data Link Layer, and Physical Layer are also known as  Lower Layers  or  Hardware Layers  .
+> Session Layer, Presentation Layer and Application Layer are also known as  Upper Layers or  Software Layers. 
+> The transport layer is called as  Heart of the OSI  model. 
+
+https://www.geeksforgeeks.org/open-systems-interconnection-model-osi/
 
     TCP/IP Layer -
     Layer 4: Application layer (application,presentation,session layer)
