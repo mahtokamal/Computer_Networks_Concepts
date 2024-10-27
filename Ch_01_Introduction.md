@@ -433,6 +433,7 @@
 > The transport layer is called as  Heart of the OSI  model. 
 
 https://www.geeksforgeeks.org/open-systems-interconnection-model-osi/
+https://www.byos.io/blog/types-of-cyber-attacks-osi
 
     TCP/IP Layer -
     Layer 4: Application layer (application,presentation,session layer)
