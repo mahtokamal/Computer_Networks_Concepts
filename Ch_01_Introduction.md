@@ -890,21 +890,21 @@ eavesdropping or man-in-the-middle attacks.
 |123|NTP|Network Time Protocol, vulnerable to amplification attacks.|
 
 ## 1.8 Communication Medias
-Wired -Wired communication technologies use physical cables to transmit data between devices.
-
-Examples-
-Co-axial cable
-STP UTP - ( Shielded and Unshielded Twisted Pair)
-Fiber Optics
-
-Wireless - Wireless communication technologies use electromagnetic waves to transmit data without the need for
-           physical cables.
-
-Examples -
-Wi-Fi
-Bluetooth 
-Cellular Network 
-Zigbee
+    Wired -Wired communication technologies use physical cables to transmit data between devices.
+    
+    Examples-
+    Co-axial cable
+    STP UTP - ( Shielded and Unshielded Twisted Pair)
+    Fiber Optics
+    
+    Wireless - Wireless communication technologies use electromagnetic waves to transmit data without the need for
+               physical cables.
+    
+    Examples -
+    Wi-Fi
+    Bluetooth 
+    Cellular Network 
+    Zigbee
 
 
     
