@@ -52,11 +52,49 @@
 
 ## 1.2 Network Types
     PAN - Personal Area Network
+          This is the smallest and most basic type of network. A PAN is made up of a wireless AP, a computer/
+          laptop or two, phones, printers, tablets, etc., and revolves around one person/family. These types of 
+          networks are typically found in homes.
+![Screenshot (687)](https://github.com/user-attachments/assets/581c6190-609b-4d79-86d0-9c9fb6010eb6)
+
     LAN -  Local Area Network
+           LANs connect groups of nodes together across short distances. 
+           LANs are networks that are either within a single building or between a group of 2 or 3 building close
+           to each other. 
+           LANs are one of the original types of networks. 
+           The device that connects the networks to each other is called a Router.
+![Screenshot (688)](https://github.com/user-attachments/assets/7cfaa092-dea1-46d8-8907-0d64583eae9d)
+
     MAN - Metropolitan Area Network
+          A MAN is a computer network that usually covers a larger area than a LAN. 
+          LAN covers a network in a single building or multiple buildings that are close to each other whereas
+          a MAN spans a city.
+          A MAN requires a Service Provider to connect the sites to each other.
+          A MAN will connect the LAN’s to each other using a Router.
+![Screenshot (689)](https://github.com/user-attachments/assets/2abe979b-3398-4ec3-bfa4-4f7b96ac0240)
+
     WAN (Private) - Wide Area Network
-    WAN (Public) Internet -
+                    A WAN is a network that covers a large geographical area. 
+                    A WAN may be spread across cities, countries or continents. 
+                    When you connect LANs & MANs of the same company to each other, it is known as a Private
+                    WAN.
+                    You require the services of the Service Provider (SP) to connect the sites to each other.
+![Screenshot (690)](https://github.com/user-attachments/assets/6acde9c9-23b4-4df3-a6bb-ea50daf91a2d)
+
+
     
+    WAN (Public) Internet - The Internet is also an example of a WAN. But it is a WAN that connects LANs of 
+                            different companies to each other, hence it is considered to be a Public WAN.
+                            It allows the Company to publish and market its services to the general public. 
+                            The Individual Users are also connected to the same network.
+                            The Service Providers that allow a company or individual to connect to this “Network
+                            of Networks” is known as a ISP (Internet Service Provider).
+                            As you are connecting different networks to each other, they need to use the same 
+                            language to communicate to each other. 
+                            This communication protocol is called the Internet Protocol (IP).
+
+    
+![Screenshot (691)](https://github.com/user-attachments/assets/fd38c58d-8f7d-46a3-9e62-7922e3c60ec3)
 
     Switch - Connects devices in the same network.
     Router - Connects devices of different network.
