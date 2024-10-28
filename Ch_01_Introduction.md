@@ -833,15 +833,64 @@ https://www.byos.io/blog/types-of-cyber-attacks-osi
 ![Screenshot (630)](https://github.com/user-attachments/assets/2eaa585a-3cde-4704-b493-90fd706200a6)
 
 ## 1.6 The Internet & DNS
-    The Internet - ISP 
+    The Internet - The “Internet” is a global system of interconnected computer networks that connects all the
+                   individual networks to each other. 
+                   These networks include the Government, Schools, Colleges, Universities, Private Businesses,
+                   Individual people etc. It is also called the “Network of Networks”. 
+                   It uses a common protocol [Language] to allow networks to communicate to each other. The 
+                   protocol is called the Internet Protocol [IP]. 
+                   Each device connected to the Internet is uniquely identified using an address known as the IP
+                   Address. [200.1.1.5]. This unique IP Address is known as the Public Address of the device.
+                   These addresses are controlled by an entity known as the Internet Address Numbers Authority (IANA).
+                   IANA allocates the addresses to the ISPs. The ISPs are responsible for assigning the IP Addresses to
+                   Companies and Individual users and making sure they are unique. 
+                    
     
+    Basics Services / Protocols on the Internet -
     
-    Basics Services / Protocols on the Internet - Web Services(Web Server or WWW), Email Service(SMTP), 
-    Name Services(DNS)
+    Web Services(Web Server or WWW) - The most common service on the Internet. It is used to provide information to
+                                      the End-Users. It uses a protocol called HTTP to allow a client using an 
+                                      application called a browser to connect to the a Server that is running the Web Server.
     
+    Email Service(SMTP) - Another common service on the Internet is the E-Mail services. It allows end-users and companies
+                          to send mail messages to each other. It uses a protocol called SMTP to allow a client to send
+                          E-mails.
+    
+    Name Services(DNS) - It allows devices to communicate to each other using Names rather than IP Addresses. It uses
+                         a protocol called DNS to allow client to resolve the Name of a device to its corresponding 
+                         address. This service is explained later in this module.
+    Internet Connections
+![Screenshot (692)](https://github.com/user-attachments/assets/a2331d75-7bcc-487d-b33b-a52b912faf44)
+
     DNS - Domain Name System
+          When we want to access a server on the Internet like Facebook, Google etc., we need to know the Server’s
+          IP Address.
+          As humans, we are used to addressing entities using names not addresses. For example, if we want to go to
+          a City, we will use the name of the city, not its Postal Code/Zip Code.
+          But the Internet communications are based on Addresses. So a mechanism was designed to make it easier
+          for users to access resources on the Internet. 
+          The companies had to register a Domain Name in addition to acquiring an IP Address range from the ISP.
+          The company would then assign the servers a name in addition to the unique IP Address.
+          The users could refer to the server using its name rather than the IP Address.
+          A server known as the Domain Name System (DNS) was designed to provide the resolution between the Name
+          of the device to its IP Address.
+         Each Domain would have its own DNS Server that would do the name resolution for that Domain/Company devices.
+         The IP Address of the DNS / Name Server for the Domains is on the Root DNS Servers. 
+![Screenshot (693)](https://github.com/user-attachments/assets/ffb0ecb0-52b0-4fa5-b7ad-eea4543bee1f)
+
     
-    DNS Communication Process
+    DNS Communication Process -
+    Step 1 : User types www.khawarb.com.
+    Step 2 : The User’s PC will send a DNS resolution request to it’s DNS server generally the ISP’s DNS Server
+             (150.5.1.11), to find the IP Address for www.khawarb.com. 
+    Step 3 : The ISP’s DNS Server will send a request to the Root DNS Server (50.5.5.5) to find the DNS for khawarb.com.
+             The Root DNS Server will respond with 199.1.1.6, the DNS Server for khawarb.com.
+    Step 4 : The ISP’s DNS now send a DNS resolution request to khawarb.com’s DNS server (199.1.1.6) asking for the IP
+             address for www.khawarb.com.
+    Step 5: The DNS Server for khawarb.com will respond back with the IP Address for www.khawarb.com (199.1.1.7).
+    Step 6: The ISP DNS Server will receive the IP address and forward it to the User’s PC.
+    Step 7: The User’s PC will use the 199.1.1.7 destination address to send the request.
+    Note: The whole procedure is done within Seconds.
 
 ## 1.7 Network Ports
     In the world of computer networking, network ports are like virtual doors that allow different applications
