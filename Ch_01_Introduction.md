@@ -832,7 +832,7 @@ https://www.byos.io/blog/types-of-cyber-attacks-osi
 
 ![Screenshot (630)](https://github.com/user-attachments/assets/2eaa585a-3cde-4704-b493-90fd706200a6)
 
-## 1.5 The Internet & DNS
+## 1.6 The Internet & DNS
     The Internet - ISP 
     
     
@@ -843,7 +843,7 @@ https://www.byos.io/blog/types-of-cyber-attacks-osi
     
     DNS Communication Process
 
-## 1.6 Network Ports
+## 1.7 Network Ports
     In the world of computer networking, network ports are like virtual doors that allow different applications
     and services to communicate with each other. They serve as specific addresses within a computer or network 
     device, helping to direct incoming and outgoing data to the correct destinations.
@@ -889,7 +889,7 @@ eavesdropping or man-in-the-middle attacks.
 |2049|NFS|Network File System, lacks encryption by default.|
 |123|NTP|Network Time Protocol, vulnerable to amplification attacks.|
 
-## Communication Medias
+## 1.8 Communication Medias
 Wired -Wired communication technologies use physical cables to transmit data between devices.
 
 Examples-
