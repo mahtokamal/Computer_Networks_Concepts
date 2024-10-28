@@ -250,11 +250,79 @@
             NICs(Network Interface Card)
     
 ## 1.4 Network Topology
-    Star
-    Bus
-    Ring
-    Mesh
-    Hybrid
+![Screenshot (694)](https://github.com/user-attachments/assets/61227703-4f6a-47ad-a95e-7106424eb12d)
+
+
+    Network topology refers to how devices in a computer network are connected. Network Topology is the way that
+    defines the structure, and how these components are connected. Network Topology is divided into two types:
+    
+    Physical Topology - refers to the actual arrangement of devices and cables in a network. It's how devices are
+    physically connected to each other.
+    
+    Logical Topology - refers to the way data flows through a network, independent of the physical connections. It's
+    how devices communicate with each other.
+
+    In essence, while physical topology dictates the physical arrangement of devices, logical topology determines
+    how data is transmitted and received within the network.
+
+
+    Basic Terminology Related to Network Topology
+    Node: A node refers to any device or point in the network, such as computers , servers , routers , or switches .
+    These nodes are crucial for transmitting and receiving data within the network.
+    Link: A link signifies a physical or logical connection between two nodes, allowing data to flow between them.
+    Links can be wired (Ethernet cables) or wireless (Wi-Fi).
+    Topology: Topology is the arrangement or layout of nodes and links in a network. It determines how devices are
+    interconnected and how data travels within the network.
+    
+    Star - A central node(hub or switch) connects all devices.
+           Data is transmitted from the central hub to each device.
+
+           EX - A small office might use a node(Switches or Routers) as a central hub to connect computers, printers,
+           and other devices.
+
+    
+    Bus - Devices are connected to a single cable.
+          Data is transmitted from one device to another along the cable.
+
+          Ex - Older Ethernet networks used bus topology, but it's less common today.
+    
+    Ring - Devices are connected in a closed loop.
+           Data is transmitted in a circular fashion, from one device to the next.
+
+           Ex - Token Ring networks were once popular but are now less common.
+
+    
+    Tree - A hierarchical structure where devices are connected to a central hub, which is then connected to
+           other hubs.
+           Similar to a star topology, but with multiple levels.
+
+           Ex - Campus networks often use a tree topology to connect multiple buildings and departments.
+
+    
+    Mesh - Every device is connected to every other device.
+           Provides high redundancy and fault tolerance.
+
+           Ex - Large organizations might use a mesh topology for critical network segments to ensure high
+                availability and redundancy.
+
+    
+    Hybrid - Combines two or more topologies.
+             Offers flexibility and can be tailored to specific needs.
+
+             Ex - Many corporate networks use a hybrid topology, combining star, bus, and ring topologies to
+                  achieve optimal performance and reliability.
+    Choosing the Right Topology - 
+    The choice of topology depends on various factors, including:
+    
+    Network size and complexity: Smaller networks may benefit from simpler topologies like star or bus, while
+                                 larger networks might require more complex topologies like mesh or hybrid.
+    Performance requirements: High-performance networks may require topologies that minimize latency and maximize
+                              bandwidth, such as mesh or hybrid.
+    Reliability and fault tolerance: Redundant topologies like mesh can improve reliability and fault tolerance.
+    Cost: Some topologies, like mesh, can be more expensive to implement due to the number of cables and devices
+    required.
+    By understanding these topologies and their characteristics, organizations can design and implement networks that
+    meet their specific needs.
 
 ## 1.5 TCP/IP vs OSI Layer
 
