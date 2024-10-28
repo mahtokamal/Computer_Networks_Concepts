@@ -1023,7 +1023,7 @@ eavesdropping or man-in-the-middle attacks.
     Cellular Network 
     Zigbee
 
-# Network Bandwidths
+# 1.9 Network Bandwidths
 **Network bandwidth** is the maximum amount of data that can be transmitted over a network connection in a given amount of time,
 usually measured in bits per second (bps), kilobits per second (Kbps), megabits per second (Mbps), or gigabits per second (Gbps).
 
@@ -1096,5 +1096,117 @@ Bandwidth affects:
 - Number of devices: Networks with higher bandwidth can support more devices and activities simultaneously.
 - Quality of experience: Insufficient bandwidth can result in lower video quality, longer loading times, and reduced
    efficiency, especially for critical applications like video calls.
-    
+
+**Related Terminologies -**
+
+1. Broadband
+
+Definition: Broadband is a method of data transmission that uses a wide range of frequencies, enabling the simultaneous
+transmission of multiple data signals.
+
+Example: Cable internet, DSL, and fiber-optic connections are types of broadband. Broadband allows multiple channels within
+the frequency band, so users can download, upload, stream, and browse simultaneously.
+
+Application: Broadband is ideal for high-speed internet connections as it supports multiple data streams (e.g., video calls,
+web browsing, gaming) at the same time.
+
+2. Baseband
+
+Definition: Baseband is a transmission method that uses the entire bandwidth of the communication channel for a single data
+signal. It’s unidirectional and supports only one data stream at a time.
+
+Example: Ethernet networks use baseband transmission, where only one device can transmit data at a time on the network medium.
+
+Application: Baseband is typically used in local area networks (LANs) because it’s simpler and cheaper but effective for short-range
+communication where only one device transmits at a time.
+
+3. Latency
+
+Definition: Latency refers to the delay between when data is sent and when it’s received. It’s usually measured in milliseconds (ms).
+
+Example: In a video call, high latency can lead to noticeable lag or delay between when one person speaks and when the other hears it.
+
+Application: Low latency is crucial for real-time applications like gaming, video conferencing, and live streaming, where even small
+delays can disrupt the user experience.
+
+4. Throughput
+
+Definition: Throughput is the actual amount of data successfully transmitted over the network in a given time. While bandwidth is the
+maximum data transfer capacity, throughput is the actual data transfer rate, usually less than bandwidth.
+
+Example: If a network has 100 Mbps bandwidth but experiences interference, it might have a throughput of only 80 Mbps.
+
+Application: Network performance measurements often consider throughput to assess how efficiently a network is using its available bandwidth.
+
+5. Bandwidth
+
+Definition: Bandwidth is the maximum data transfer rate of a network, measured in bits per second (bps). It defines the total amount of data
+that can be transferred over a network in a set period.
+
+Example: A 1 Gbps (gigabit per second) Ethernet connection has a maximum bandwidth of 1 billion bits per second.
+
+Application: Higher bandwidth allows more data to flow, supporting activities like high-definition video streaming,
+large file transfers, and multiple simultaneous connections.
+
+6. Bit Rate
+
+Definition: Bit rate is the number of bits transmitted per second in a network. It’s a measure of data transfer speed and is often used
+interchangeably with bandwidth.
+
+Example: A music streaming service with a 320 Kbps bit rate transmits 320 kilobits of data per second for high-quality sound.
+
+Application: Bit rate is significant for digital media (audio and video) quality, where higher bit rates correspond to better quality
+but require more bandwidth.
+
+7. Packet Loss
+
+Definition: Packet loss occurs when data packets traveling over a network fail to reach their destination. It’s often caused by network
+congestion, hardware failures, or signal interference.
+
+Example: During a video call, packet loss can cause frozen screens or distorted audio, as some of the data fails to transmit successfully.
+
+Application: Low packet loss is essential for applications requiring consistent data flow, like VoIP (Voice over IP) and online gaming.
+High packet loss can significantly degrade the quality of these applications.
+
+8. Jitter
+
+Definition: Jitter refers to the variation in packet arrival times, which can disrupt the smooth flow of data. It’s particularly problematic
+for time-sensitive communications.
+
+Example: In a video call, jitter can result in choppy audio or misaligned video and audio.
+
+Application: Networks often measure and attempt to minimize jitter for video and voice applications, where data needs to arrive in a specific
+order and timing.
+
+9. Full Duplex and Half Duplex
+
+Full Duplex: Communication in which data transmission occurs simultaneously in both directions.
+Example: Modern Ethernet networks and phone lines support full-duplex communication, allowing seamless conversations without waiting turns.
+
+Half Duplex: Communication in which data transmission occurs in both directions but not at the same time.
+Example: Walkie-talkies are half-duplex devices where only one person can speak at a time, while the other listens.
+
+Application: Full-duplex communication is generally preferred in networking as it increases efficiency, particularly in fast data transfer
+environments like gigabit Ethernet networks.
+
+10. Signal-to-Noise Ratio (SNR)
+
+Definition: Signal-to-noise ratio is the measure of the signal strength relative to background noise on a network. Higher SNR means better
+signal quality.
+Example: In Wi-Fi networks, a low SNR can reduce speeds and increase the chance of dropped connections.
+Application: High SNR is essential in wireless networks to ensure clear, reliable data transmission, particularly in environments with
+interference from other wireless devices.
+
+11. Data Rate and Baud Rate
+
+Data Rate: Refers to the number of data bits (binary bits) transmitted per second in a network.
+Baud Rate: The number of signal changes per second in a communication channel.
+Example: In modems, a baud rate of 2400 can carry a data rate of up to 9600 bps by encoding multiple bits in each signal change.
+Application: Baud rate is significant for analog communication channels, while data rate is relevant for measuring digital
+communication speeds.
+
+12. Latency vs. Bandwidth
+Latency measures the delay in data transmission, while bandwidth measures the capacity of the network connection.
+Example: A network with high bandwidth but high latency might allow large downloads but would struggle with real-time applications
+like gaming, where quick response times are needed.
 
