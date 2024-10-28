@@ -1023,6 +1023,78 @@ eavesdropping or man-in-the-middle attacks.
     Cellular Network 
     Zigbee
 
+# Network Bandwidths
+**Network bandwidth** is the maximum amount of data that can be transmitted over a network connection in a given amount of time,
+usually measured in bits per second (bps), kilobits per second (Kbps), megabits per second (Mbps), or gigabits per second (Gbps).
 
+It’s like the width of a highway: the wider the highway (or higher the bandwidth), the more cars (data packets) it can carry 
+simultaneously, resulting in faster data transfer rates.
+
+**Working Examples of Network Bandwidth**
+
+**1. Home Internet Connection**
+
+Example: Imagine a 100 Mbps home internet connection from a provider like Comcast or Verizon. This bandwidth rating means that
+under ideal conditions, the connection can transfer up to 100 megabits of data per second.
+
+Explanation: If only one device (like a laptop) is using the internet, it might use a large portion of that 100 Mbps bandwidth,
+allowing for high-definition streaming, gaming, or large downloads. However, if multiple devices (smart TVs, phones, tablets, etc.)
+are connected simultaneously, each device's speed will be slower as the 100 Mbps bandwidth is divided among them.
+
+**2. Video Streaming on Platforms like Netflix or YouTube**
+
+Example: Streaming services like Netflix recommend a minimum bandwidth of around 5 Mbps for HD video and up to 25 Mbps for 4K
+UHD streaming.
+
+Explanation: If you have a 10 Mbps connection, streaming HD content should work smoothly. However, if another device starts a
+large download or someone else streams a video, the available bandwidth might fall below the 5 Mbps required for HD, resulting
+in buffering or reduced video quality. Higher bandwidth connections allow multiple devices to stream high-quality video without
+interruption.
+
+**3. Corporate Office with High Bandwidth Needs**
+
+Example: A company might have a 1 Gbps (1000 Mbps) connection to support hundreds of employees. In this case, employees require
+internet for video conferencing, cloud computing, file sharing, and general browsing.
+
+Explanation: The high bandwidth ensures that activities requiring significant data transfer, like video conferencing or accessing
+large cloud-stored files, can be done without network slowdowns. However, if network activity spikes (e.g., everyone is streaming
+a video or uploading files simultaneously), even 1 Gbps may feel limited, causing delays.
+
+**4. Online Gaming**
+
+Example: Online games require a stable internet connection with low latency and sufficient bandwidth. For example, games like
+Fortnite or Call of Duty may require at least 3 Mbps for optimal performance.
+
+Explanation: Though online gaming doesn’t use much bandwidth compared to streaming, it requires a steady connection. Low
+bandwidth can cause lag, especially when other devices are streaming or downloading large files. Gamers often use high-bandwidth
+connections to avoid interruptions.
+
+**5. Cloud-Based Applications**
+
+Example: Cloud-based applications like Google Workspace, Microsoft Teams, or Zoom require considerable bandwidth, especially
+for video calls or file sharing.
+
+Explanation: A bandwidth of around 10-20 Mbps per user is recommended for smooth video calls. If bandwidth is low, calls may
+experience lag or freeze, while files may upload/download slowly. High bandwidth ensures that employees can interact without
+disruptions, even during peak usage.
+
+**6. IoT Devices and Smart Homes**
+
+Example: Smart home setups with multiple devices like security cameras, smart lights, and thermostats use network bandwidth to
+send and receive data.
+
+Explanation: Security cameras, especially high-definition ones, can use significant bandwidth for video uploads. In a network
+with limited bandwidth, having multiple IoT devices connected can slow down the network. Higher bandwidth prevents smart home
+devices from disrupting one another or other connected devices.
+
+Why Network Bandwidth Matters
+
+Bandwidth affects:
+
+- Data transfer speed: Higher bandwidth allows more data to be transferred quickly, which improves loading times and reduces
+   buffering.
+- Number of devices: Networks with higher bandwidth can support more devices and activities simultaneously.
+- Quality of experience: Insufficient bandwidth can result in lower video quality, longer loading times, and reduced
+   efficiency, especially for critical applications like video calls.
     
 
