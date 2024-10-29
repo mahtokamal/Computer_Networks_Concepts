@@ -1006,7 +1006,8 @@ eavesdropping or man-in-the-middle attacks.
 |2049|NFS|Network File System, lacks encryption by default.|
 |123|NTP|Network Time Protocol, vulnerable to amplification attacks.|
 
-## 1.8 Communication Medias
+# 1.8 Communication Medias
+
     Wired -Wired communication technologies use physical cables to transmit data between devices.
     
     Examples-
@@ -1021,7 +1022,99 @@ eavesdropping or man-in-the-middle attacks.
     Wi-Fi
     Bluetooth 
     Cellular Network 
-    Zigbee
+    Zigbee 
+
+Communication media, or transmission media, are the physical pathways through which data is transmitted in a network. They
+can be broadly categorized into two types:
+
+1. Guided Media
+
+Guided media provide a physical path for data transmission.
+
+Twisted-Pair Cable:
+Description: Two insulated copper wires twisted together to reduce interference.
+Types:
+
+![1973_1](https://github.com/user-attachments/assets/ac4cbe73-b755-4088-8703-c2ff59822094)
+![Screenshot (695)](https://github.com/user-attachments/assets/905551cf-6e65-405e-b0df-5eb02436d669)
+
+
+Shielded Twisted Pair (STP): Provides better shielding against interference.
+Unshielded Twisted Pair (UTP): More common and less expensive.
+
+Real-world Example: Ethernet cables used to connect computers to a router or switch.
+
+Coaxial Cable:
+Description: A single copper wire surrounded by insulation, a braided shield, and an outer jacket.
+Types:
+Baseband coaxial cable
+Broadband coaxial cable
+
+![Screenshot (696)](https://github.com/user-attachments/assets/afc2e594-0b80-48ca-934d-e6ab7ec4b71c)
+
+Real-world Example: Older cable TV networks and some older Ethernet networks.
+
+Fiber Optic Cable:
+Description: Uses thin strands of glass or plastic to transmit data as pulses of light.
+![Screenshot (697)](https://github.com/user-attachments/assets/cc717f44-0c26-45ad-93c2-de2b0d38beb1)
+
+Types:
+Single-mode fiber
+Multi-mode fiber
+Real-world Example: Long-distance telecommunications and high-speed internet connections.
+
+2. Unguided Media
+
+Unguided media transmit data through the air or space without a physical conductor.
+
+Wireless Media:
+
+Radio Waves: Used for Wi-Fi, Bluetooth, Zigbee, cellular networks, and radio broadcasts.
+
+![radiowave](https://github.com/user-attachments/assets/ddd60451-3adb-4671-aca7-7157b301db9c)
+
+Microwaves: Used for satellite communication and point-to-point links.
+
+![Microwave-tranmission-media](https://github.com/user-attachments/assets/36300b80-6017-4fce-a934-8fea4dd7ee6f)
+
+Infrared: Used for short-range communication, such as remote controls.
+
+![infrared1-227x300](https://github.com/user-attachments/assets/a0dfc6b6-088c-41e4-a4a0-fb83e81a55d2)
+
+Real-world Example: Wi-Fi networks in offices, homes, and public places.
+
+![Screenshot (698)](https://github.com/user-attachments/assets/2b65785a-1e09-489f-9eac-ece72425c7b2)
+
+Wi-Fi Protocols
+- WEP (Wired Equivalent Privacy) early encryption standard, now outdated due to weak encryption.
+- WPA (Wi-Fi Protected Access) Introduced to address WEP weaknesses with better encryption (TKIP temporal key integrity protocol ).
+- WPA2 (Wi-Fi Protected Access 2) Uses AES encryption, significantly more secure than WEP and WPA.
+- WPA3 (Wi-Fi Protected Access 3) The latest, offering enhanced encryption (AES-256) and security, ideal for modern networks.
+
+Zigbee
+
+Zigbee is a wireless communication protocol designed for low-power, low-data-rate applications.
+It's particularly well-suited for home automation and IoT devices due to its low cost, long battery life, and reliable
+mesh network capabilities.
+
+
+Applications of Zigbee
+
+- Home Automation: Controlling lights, thermostats, and other home appliances.   
+- Smart Buildings: Monitoring and controlling building systems, such as HVAC and lighting.   
+- Industrial Automation: Monitoring and controlling industrial processes.   
+- Healthcare: Remote patient monitoring and medical device control.   
+- Agriculture: Monitoring soil moisture, temperature, and other environmental factors.
+
+Choosing the Right Media
+
+The choice of communication media depends on several factors, including:
+
+- Distance: Longer distances often require fiber optic cables or wireless technologies.
+- Bandwidth: High-bandwidth applications need high-speed media like fiber optic cables.
+- Security: Fiber optic cables are more secure than wireless or copper cables.
+- Cost: Fiber optic cables are generally more expensive to install and maintain than copper cables.
+- Environmental Factors: Wireless signals can be affected by obstacles and interference
 
 # 1.9 Network Bandwidths
 **Network bandwidth** is the maximum amount of data that can be transmitted over a network connection in a given amount of time,
