@@ -1303,3 +1303,8 @@ Latency measures the delay in data transmission, while bandwidth measures the ca
 Example: A network with high bandwidth but high latency might allow large downloads but would struggle with real-time applications
 like gaming, where quick response times are needed.
 
+# 1.10 Ethernet Cable Color Coding
+
+1. Straight
+2. Cross Over
+3. Roll over
