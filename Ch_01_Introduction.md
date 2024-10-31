@@ -1306,10 +1306,13 @@ like gaming, where quick response times are needed.
 # 1.10 Ethernet Cable Color Coding
 
 1. Straight
+
 ![Screenshot (699)](https://github.com/user-attachments/assets/414041cb-0542-4830-a2d5-b68a724e1a7f)
+
 ![Screenshot (700)](https://github.com/user-attachments/assets/60c766d8-8ba2-4f5a-b03f-7dbbc783d31f)
 
 3. Cross Over
+
 ![Screenshot (701)](https://github.com/user-attachments/assets/14a8768d-05c6-4483-a53e-8a967a3183a3)
 
 ![Screenshot (702)](https://github.com/user-attachments/assets/854aa7ac-bc01-47ca-a87e-774609f4f2ec)
