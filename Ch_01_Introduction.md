@@ -1310,5 +1310,9 @@ like gaming, where quick response times are needed.
 ![Screenshot (700)](https://github.com/user-attachments/assets/60c766d8-8ba2-4f5a-b03f-7dbbc783d31f)
 
 3. Cross Over
+![Screenshot (701)](https://github.com/user-attachments/assets/14a8768d-05c6-4483-a53e-8a967a3183a3)
+
+![Screenshot (702)](https://github.com/user-attachments/assets/854aa7ac-bc01-47ca-a87e-774609f4f2ec)
+
 
 5. Roll over
