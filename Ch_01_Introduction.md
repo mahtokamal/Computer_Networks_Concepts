@@ -1306,5 +1306,9 @@ like gaming, where quick response times are needed.
 # 1.10 Ethernet Cable Color Coding
 
 1. Straight
-2. Cross Over
-3. Roll over
+![Screenshot (699)](https://github.com/user-attachments/assets/414041cb-0542-4830-a2d5-b68a724e1a7f)
+![Screenshot (700)](https://github.com/user-attachments/assets/60c766d8-8ba2-4f5a-b03f-7dbbc783d31f)
+
+3. Cross Over
+
+5. Roll over
