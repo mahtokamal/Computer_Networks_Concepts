@@ -1304,21 +1304,81 @@ Example: A network with high bandwidth but high latency might allow large downlo
 like gaming, where quick response times are needed.
 
 # 1.10 Ethernet Cable Color Coding
+**RJ45 Wiring Standards (T568A and T568B)**
 
-1. Straight
+The two standard wiring configurations, T568A and T568B, define how the colored wires are arranged in an RJ45 connector for standard Ethernet cabling:
+
+**T568A Wiring Standard**
+
+- Pin 1: White/Green
+- Pin 2: Green
+- Pin 3: White/Orange
+- Pin 4: Blue
+- Pin 5: White/Blue
+- Pin 6: Orange
+- Pin 7: White/Brown
+- Pin 8: Brown
+
+**T568B Wiring Standard**
+
+- Pin 1: White/Orange
+- Pin 2: Orange
+- Pin 3: White/Green
+- Pin 4: Blue
+- Pin 5: White/Blue
+- Pin 6: Green
+- Pin 7: White/Brown
+- Pin 8: Brown
+
+T568B is the most widely used standard, especially in the United States, while T568A is sometimes used in government and residential networks.
+
+
+1. Straight-Through Cabling
+**Application:** Used to connect different types of devices, like computers to switches or routers.
+
+**Example:** In an office, straight-through cables connect workstations to the network switch, allowing communication over the LAN.
+
+**Wiring:** T568B on both ends (or T568A for residential).
 
 ![Screenshot (699)](https://github.com/user-attachments/assets/414041cb-0542-4830-a2d5-b68a724e1a7f)
 
 ![Screenshot (700)](https://github.com/user-attachments/assets/60c766d8-8ba2-4f5a-b03f-7dbbc783d31f)
 
-2. Cross Over
+2. Cross-Over Cabling
+**Application:** Connects similar devices directly, like two computers or two switches without an intermediary device.
+
+**Example:** A crossover cable can be used to connect two laptops for direct file sharing without a network switch.
+
+**Wiring:** T568A on one end, T568B on the other.
 
 ![Screenshot (701)](https://github.com/user-attachments/assets/14a8768d-05c6-4483-a53e-8a967a3183a3)
 
 ![Screenshot (702)](https://github.com/user-attachments/assets/854aa7ac-bc01-47ca-a87e-774609f4f2ec)
 
 
-3. Roll over
+3. Console (Roll over) Cabling
+**Application:** Primarily used to connect a computer to the console port of a networking device like a router or switch for configuration.
 
+**Example:** Network administrators use a rollover cable to connect a laptop to a Cisco router’s console port to configure it.
+
+**Wiring:** Pin 1 to Pin 8, Pin 2 to Pin 7, Pin 3 to Pin 6, etc. (the cable is “rolled over” so the pins on one side are reversed on the other).
+
+The rollover cable is wired in reverse:
+
+- Pin 1 to Pin 8
+- Pin 2 to Pin 7
+- Pin 3 to Pin 6
+- Pin 4 to Pin 5
+- Pin 5 to Pin 4
+- Pin 6 to Pin 3
+- Pin 7 to Pin 2
+- Pin 8 to Pin 1
 ![Rollover-Cable](https://github.com/user-attachments/assets/4a6c5722-0b01-47ee-95ec-8d8d7b15af49)
+
+5. Power over Ethernet (PoE) Applications
+**Application:** Combines data and power over a single Ethernet cable, ideal for powering devices like IP cameras, phones, and wireless access points.
+
+**Example:** In an office, PoE allows installation of security cameras and access points without needing separate power sources.
+
+**Wiring:** Either T568A or T568B, based on the environment.
 
