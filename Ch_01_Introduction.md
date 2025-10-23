@@ -1382,3 +1382,6 @@ The rollover cable is wired in reverse:
 
 **Wiring:** Either T568A or T568B, based on the environment.
 
+# References
+https://tryhackme.com/module/network-fundamentals?ref=blog.tryhackme.com
+
