@@ -1238,6 +1238,11 @@ that can be transferred over a network in a set period.
 
 Example: A 1 Gbps (gigabit per second) Ethernet connection has a maximum bandwidth of 1 billion bits per second.
 
+Network Speeds
+Kbps (Kilobits per second): A thousand bits per second.
+Mbps (Megabits per second): A million bits per second.
+Gbps (Gigabits per second): A billion bits per second.
+
 Application: Higher bandwidth allows more data to flow, supporting activities like high-definition video streaming,
 large file transfers, and multiple simultaneous connections.
 
@@ -1303,6 +1308,7 @@ Latency measures the delay in data transmission, while bandwidth measures the ca
 Example: A network with high bandwidth but high latency might allow large downloads but would struggle with real-time applications
 like gaming, where quick response times are needed.
 
+13. Quality of Service (QoS): A set of techniques used to prioritize network traffic and ensure that certain types of data, such as voice and video, receive the necessary bandwidth
 # 1.10 Ethernet Cable Color Coding
 **RJ45 Wiring Standards (T568A and T568B)**
 
