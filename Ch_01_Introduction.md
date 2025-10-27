@@ -1425,6 +1425,8 @@ The rollover cable is wired in reverse:
 
 **Wiring:** Either T568A or T568B, based on the environment.
 
+# What is Network port?
+What is worth noting here is that these protocols only follow the standards. I.e. you can administer applications that interact with these protocols on a different port other than what is the standard (running a web server on 8080 instead of the 80 standard port). Note, however, applications will presume that the standard is being followed, so you will have to provide a colon (:) along with the port number.
 # References
 https://tryhackme.com/module/network-fundamentals?ref=blog.tryhackme.com
 
