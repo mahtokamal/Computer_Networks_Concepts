@@ -900,6 +900,19 @@ https://www.byos.io/blog/types-of-cyber-attacks-osi
 
 ![Screenshot (630)](https://github.com/user-attachments/assets/2eaa585a-3cde-4704-b493-90fd706200a6)
 
+> [!NOTE]
+> History:
+> It's important to understand exactly why the TCP/IP and OSI models were originally created. To begin with there was no standardisation -- different manufacturers followed
+> their own methodologies, and consequently systems made by different manufacturers were completely incompatible when it came to networking. The TCP/IP model was
+> introduced by the American DoD in 1982 to provide a standard -- something for all of the different manufacturers to follow. This sorted out the inconsistency problems.
+> Later the OSI model was also introduced by the International Organisation for Standardisation (ISO); however, it's mainly used as a more comprehensive guide for
+> learning, as the TCP/IP model is still the standard upon which modern networking is based.
+> Note: Some recent sources split the TCP/IP model into five layers -- breaking the Network Interface layer into Data Link and Physical layers (as with the OSI model).
+> This is accepted and well-known; however, it is not officially defined (unlike the original four layers which are defined in RFC1122). It's up to you which version you
+>  use -- both are generally considered valid.
+> You would be justified in asking why we bother with the OSI model if it's not actually used for anything in the real-world. The answer to that question is quite simply
+> that the OSI model (due to being less condensed and more rigid than the TCP/IP model) tends to be easier for learning the initial theory of networking.
+
 ## 1.6 The Internet & DNS
     The Internet - The “Internet” is a global system of interconnected computer networks that connects all the
                    individual networks to each other. 
