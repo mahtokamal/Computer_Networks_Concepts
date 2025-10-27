@@ -1430,3 +1430,4 @@ https://tryhackme.com/module/network-fundamentals?ref=blog.tryhackme.com
 
 https://tryhackme.com/module/network-fundamentals?ref=blog.tryhackme.com
 
+https://www.vmaxx.net/techinfo/ports.htm
