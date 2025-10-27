@@ -1428,3 +1428,5 @@ The rollover cable is wired in reverse:
 # References
 https://tryhackme.com/module/network-fundamentals?ref=blog.tryhackme.com
 
+https://tryhackme.com/module/network-fundamentals?ref=blog.tryhackme.com
+
