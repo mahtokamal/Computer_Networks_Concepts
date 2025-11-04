@@ -1,5 +1,4 @@
 # 1. Introduction to Networking
-
 ## 1.1 Introduction to Networks
     What is a Computer Network?
     The connection between two or more than two devices, nodes or points whether the link is wired or wireless
@@ -43,10 +42,6 @@
             Naval Connector) connector 
     RJ-45 - Registered Jack 45.
     T-connector - Tee Connector. used to split radio frequency power from a cable into two
-
-    HUB -
-    Switch -
-    
 
 ![Untitled Diagram drawio](https://github.com/user-attachments/assets/6fa8684f-3fcf-43a8-9a53-1aea5cc05a32)
 
@@ -603,7 +598,7 @@
                                       Intrusion Detection and Prevention Systems (IDPS): Monitors session behavior
                                       and detects anomalies, such as unexpected replays or session takeovers.
     
-    Layer 4: Transport layer (Data = Segments)
+    Layer 4: Transport layer (Data = TCP(Segments), UDP(Datagram))
     
              Function - The Transport Layer (Layer 4) is responsible for reliable data transfer between devices
                         by managing data segmentation, flow control, error handling, and ensuring data integrity.
@@ -858,8 +853,8 @@
 > Session Layer, Presentation Layer and Application Layer are also known as  Upper Layers or  Software Layers. 
 > The transport layer is called as  Heart of the OSI  model. 
 
-https://www.geeksforgeeks.org/open-systems-interconnection-model-osi/
-https://www.byos.io/blog/types-of-cyber-attacks-osi
+- https://www.geeksforgeeks.org/open-systems-interconnection-model-osi/
+- https://www.byos.io/blog/types-of-cyber-attacks-osi
 
     TCP/IP Layer -
     Layer 4: Application layer (application,presentation,session layer)
@@ -1440,6 +1435,7 @@ The rollover cable is wired in reverse:
 
 # What is Network port?
 What is worth noting here is that these protocols only follow the standards. I.e. you can administer applications that interact with these protocols on a different port other than what is the standard (running a web server on 8080 instead of the 80 standard port). Note, however, applications will presume that the standard is being followed, so you will have to provide a colon (:) along with the port number.
+
 # References
 https://tryhackme.com/module/network-fundamentals?ref=blog.tryhackme.com
 
