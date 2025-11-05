@@ -894,6 +894,15 @@ Syslog is like a central security camera that records events from multiple rooms
 🧠 In short:<br>
 - Network protocols are the language of communication between devices.
 - In cybersecurity, understanding how they work, fail, and can be secured helps you detect, defend, and harden systems
+
+- https://www.geeksforgeeks.org/computer-networks/difference-between-pgp-and-s-mime/
+- https://www.geeksforgeeks.org/computer-networks/difference-between-arp-and-rarp/
+- https://www.geeksforgeeks.org/computer-networks/wifi-protected-access-wpa/
+- https://us.norton.com/blog/wifi/wep-vs-wpa
+- https://nordvpn.com/blog/wep-vs-wpa-vs-wpa2-vs-wpa3/?srsltid=AfmBOorS_AQ-u8U2l1UE447-51pQqkI9w_RmaMNWbbPYxnQE_ZeG5int
+- https://www.esecurityplanet.com/trends/the-best-security-for-wireless-networks/#:~:text=WEP%2C%20WPA%2C%20WPA2%2C%20and,encryption%20and%20enhanced%20attack%20defense.
+- https://www.mokosmart.com/guide-on-different-bluetooth-versions/
+- https://www.rtings.com/headphones/learn/bluetooth-versions-comparison-profiles
 ## 2.7
 ##
     
