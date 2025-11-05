@@ -895,6 +895,270 @@ Syslog is like a central security camera that records events from multiple rooms
 - Network protocols are the language of communication between devices.
 - In cybersecurity, understanding how they work, fail, and can be secured helps you detect, defend, and harden systems
 
+**📶What is Wi-Fi?** <br>
+Wi-Fi (short for Wireless Fidelity) is a wireless networking technology that allows devices (like laptops, phones, or IoT gadgets) to connect to the Internet or a local network without cables using radio waves — typically in the 2.4 GHz or 5 GHz frequency bands (and newer ones like 6 GHz in Wi-Fi 6E).<br>
+
+It’s based on the IEEE 802.11 family of standards.<br>
+
+💡 Real-World Analogy<br>
+Imagine a Wi-Fi router as a public speaker in a room and your devices as listeners:<br>
+- The router (speaker) broadcasts information loudly using radio waves.
+- The devices (listeners) can “hear” and respond — as long as they’re close enough and tuned to the same channel (frequency).
+- To prevent eavesdropping, they agree on a secret language (encryption) so only authorized listeners can understand what’s said.
+
+So Wi-Fi is like having a private conversation in a crowded room — encryption keeps others from eavesdropping.<br>
+
+⚙️How Wi-Fi Works (Simple Flow)<br>
+- Your device searches for nearby Wi-Fi signals (beacons).
+- It connects to a specific SSID (network name).
+- You may need to enter a password.
+- The router authenticates you and assigns you an IP address (via DHCP).
+- You can now send and receive data wirelessly, which the router transmits to the Internet.
+
+🧩 3. Wi-Fi Security Protocols (WEP → WPA → WPA2 → WPA3 → WPA4)<br>
+Wi-Fi security protocols define how your wireless data is protected — i.e., how encryption and authentication are handled between the router and device.<br>
+Let’s compare them historically and technically 👇<br>
+🔐 A. WEP (Wired Equivalent Privacy)<br>
+| Feature            | Details                                                  |
+| ------------------ | -------------------------------------------------------- |
+| **Introduced**     | 1999                                                     |
+| **Encryption**     | RC4 stream cipher                                        |
+| **Key Length**     | 64-bit or 128-bit                                        |
+| **Security Level** | ❌ Very weak                                              |
+| **Authentication** | Static key shared among all users                        |
+| **Attack Surface** | Easily cracked using tools like *Aircrack-ng* in minutes |
+
+💡 Analogy<br>
+Imagine everyone in a club using the same door code for years — once a thief learns it, everyone’s vulnerable.<br>
+That’s WEP.<br>
+🧠 Cybersecurity Note<br>
+- WEP can be broken within minutes due to predictable IVs (Initialization Vectors).
+- Never use WEP — it’s deprecated and insecure.
+
+🛡️ B. WPA (Wi-Fi Protected Access)<br>
+| Feature            | Details                                           |
+| ------------------ | ------------------------------------------------- |
+| **Introduced**     | 2003                                              |
+| **Encryption**     | TKIP (Temporal Key Integrity Protocol)            |
+| **Security Level** | ⚠️ Improved but still weak today                  |
+| **Authentication** | Passphrase-based (PSK) or enterprise (802.1X)     |
+| **Fixes**          | Added per-packet key mixing to mitigate WEP flaws |
+
+💡 Analogy<br>
+Instead of one old door code (WEP), WPA changes the code regularly, but it’s still an old lock mechanism that skilled thieves can bypass.<br>
+🧠 Cybersecurity Note<br>
+- TKIP was a temporary fix; now considered obsolete.
+- Vulnerable to dictionary and replay attacks.
+
+🔒 C. WPA2 (Wi-Fi Protected Access 2) <br>
+| Feature             | Details                                                                                                           |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **Introduced**      | 2004                                                                                                              |
+| **Encryption**      | AES-CCMP (Advanced Encryption Standard – Counter Mode Cipher Block Chaining Message Authentication Code Protocol) |
+| **Security Level**  | ✅ Strong and widely used                                                                                          |
+| **Authentication**  | WPA2-PSK (home) or WPA2-Enterprise (corporate)                                                                    |
+| **Vulnerabilities** | *KRACK attack* (Key Reinstallation Attack) in 2017 exposed flaws in 4-way handshake                               |
+
+💡 Analogy<br>
+WPA2 is like a modern digital lock — strong, but if the installation (handshake) is sloppy, a hacker can exploit that moment to sneak in.<br>
+
+🧠 Cybersecurity Note<br>
+- Still used widely but should be replaced by WPA3 where possible.
+- Use complex passphrases and firmware updates.
+
+🧰 D. WPA3<br>
+| Feature            | Details                                                                     |
+| ------------------ | --------------------------------------------------------------------------- |
+| **Introduced**     | 2018                                                                        |
+| **Encryption**     | AES-GCMP and **SAE (Simultaneous Authentication of Equals)** instead of PSK |
+| **Security Level** | ✅✅ Very strong                                                              |
+| **Authentication** | Per-user encryption; resistant to offline brute-force attacks               |
+| **Extras**         | Forward secrecy, improved protection for open networks (OWE)                |
+
+💡 Analogy<br>
+WPA3 is like a smart biometric lock — even if someone copies your old keys, they can’t open it because each unlock session is unique.<br>
+
+🧠 Cybersecurity Note<br>
+- SAE prevents dictionary attacks.
+- Even open Wi-Fi networks can use encryption (OWE).
+- Recommended for modern routers and devices.
+
+🚀 E. WPA4 (Coming Next-Gen Standard)<br>
+| Feature            | Details                                                        |
+| ------------------ | -------------------------------------------------------------- |
+| **Introduced**     | In development (expected ~2025–2026)                           |
+| **Encryption**     | Quantum-resistant cryptography (planned)                       |
+| **Security Level** | 🚀 Next-generation                                             |
+| **Features**       | AI-driven threat detection, IoT security optimization          |
+| **Goal**           | Protect against future computing (quantum) and smarter attacks |
+
+💡 Analogy<br>
+WPA4 will be like a self-learning security guard — it adapts to threats and resists even future, more powerful intruders.<br>
+
+📊 4. Wi-Fi Security Protocol Comparison Table<br>
+| Protocol | Year       | Encryption     | Authentication | Security        | Status         |
+| -------- | ---------- | -------------- | -------------- | --------------- | -------------- |
+| **WEP**  | 1999       | RC4            | Shared key     | ❌ Broken        | Deprecated     |
+| **WPA**  | 2003       | TKIP           | PSK / 802.1X   | ⚠️ Weak         | Obsolete       |
+| **WPA2** | 2004       | AES-CCMP       | PSK / 802.1X   | ✅ Strong        | Common         |
+| **WPA3** | 2018       | AES-GCMP / SAE | SAE / 802.1X   | ✅✅ Very Strong  | Recommended    |
+| **WPA4** | (Upcoming) | Quantum-Safe   | SAE+           | 🚀 Future Proof | In development |
+
+🧠 5. In Cybersecurity Context<br>
+| Concern                      | WEP | WPA | WPA2 | WPA3               |
+| ---------------------------- | --- | --- | ---- | ------------------ |
+| **Brute-force Resistant**    | ❌   | ⚠️  | ✅    | ✅✅                 |
+| **Replay Attack Protection** | ❌   | ⚠️  | ✅    | ✅✅                 |
+| **Forward Secrecy**          | ❌   | ❌   | ❌    | ✅                  |
+| **Public Wi-Fi Encryption**  | ❌   | ❌   | ❌    | ✅ (OWE)            |
+| **Enterprise Support**       | ⚠️  | ✅   | ✅    | ✅✅                 |
+| **Quantum Resistance**       | ❌   | ❌   | ❌    | 🚀 Planned in WPA4 |
+
+🏙️ 6. Real-World Application Example<br>
+| Scenario                            | Recommended Security              |
+| ----------------------------------- | --------------------------------- |
+| **Home Wi-Fi**                      | WPA3-Personal (SAE)               |
+| **Business / Corporate Wi-Fi**      | WPA3-Enterprise (RADIUS + 802.1X) |
+| **Public Hotspot (Airport / Café)** | WPA3-Open (OWE)                   |
+| **Legacy Devices (Old Hardware)**   | WPA2 (if WPA3 unsupported)        |
+
+🧩 7. Summary Analogy<br>
+| Protocol | Analogy                             | Security Level  |
+| -------- | ----------------------------------- | --------------- |
+| **WEP**  | Everyone shares one old door key    | ❌ Very weak     |
+| **WPA**  | Door key changes but still old lock | ⚠️ Weak         |
+| **WPA2** | Modern electronic lock              | ✅ Strong        |
+| **WPA3** | Smart biometric lock                | ✅✅ Very strong  |
+| **WPA4** | Self-learning AI guard              | 🚀 Future ready |
+
+✅ In Short:<br>
+Wi-Fi lets devices talk wirelessly, but without strong encryption, it’s like shouting your secrets in a crowded room.
+The evolution from WEP → WPA → WPA2 → WPA3 → WPA4 is the story of Wi-Fi learning to speak privately and securely.<br>
+
+**🔵 1. What is Bluetooth?** <br>
+➤ Bluetooth is a short-range wireless communication technology designed for exchanging data between devices over short distances (typically up to 10 meters) using radio waves in the 2.4 GHz ISM band.<br>
+
+It’s defined by the IEEE 802.15.1 standard and managed by the Bluetooth Special Interest Group (SIG).<br>
+
+💡 Real-World Analogy<br>
+
+Imagine you’re in a small room having a quiet conversation with a friend:<br>
+
+- You speak softly so only they can hear you (short-range radio).
+- You both pair beforehand (agree on a secret language).
+- You trust each other not to share what’s said (encrypted communication).
+
+That’s Bluetooth — two devices (like your phone and earbuds) having a private conversation through the air, while ignoring others nearby.<br>
+⚙️ 2. How Bluetooth Works<br>
+- Discovery: Devices search for nearby Bluetooth-enabled devices.
+(Like scanning for a friend in a room.)
+
+- Pairing: Devices establish trust using PIN codes or keys.
+(You both agree on a secret password.)
+
+- Bonding: The devices remember each other for future connections.
+(Next time, you reconnect automatically.)
+
+- Data Exchange: Devices send encrypted data packets using a shared key.
+
+🌐 3. Versions and Evolution of Bluetooth<br>
+Bluetooth has evolved over time — improving speed, range, energy efficiency, and security.<br>
+| Version      | Year      | Speed               | Range  | Key Feature                         |
+| ------------ | --------- | ------------------- | ------ | ----------------------------------- |
+| 1.0 – 1.2    | 1999–2003 | 721 kbps            | 10 m   | Basic pairing, insecure             |
+| 2.0 + EDR    | 2004      | 3 Mbps              | 10 m   | Faster data                         |
+| 3.0 + HS     | 2009      | 24 Mbps (via Wi-Fi) | 10 m   | High speed                          |
+| 4.0          | 2010      | 1 Mbps              | 60 m   | BLE (Bluetooth Low Energy)          |
+| 4.2          | 2014      | 1 Mbps              | 60 m   | IPv6 over Bluetooth                 |
+| 5.0          | 2016      | 2 Mbps              | 240 m  | IoT support, longer range           |
+| 5.1 – 5.3    | 2019–2023 | 2 Mbps              | 400 m  | Direction finding, energy efficient |
+| 5.4 (Latest) | 2024      | 2 Mbps              | 400+ m | Enhanced security for IoT devices   |
+
+🔐 4. Bluetooth Protocols and Cybersecurity<br>
+Bluetooth communication uses several protocols stacked together (the “Bluetooth Stack”), each responsible for specific functions.<br>
+Let’s focus on the security-relevant layers:<br>
+| Layer                     | Purpose                                     | Example Protocols                 |
+| ------------------------- | ------------------------------------------- | --------------------------------- |
+| **Radio Layer**           | Physical signal transmission                | 2.4 GHz radio                     |
+| **Baseband Layer**        | Connection setup & timing                   | Inquiry, paging                   |
+| **L2CAP**                 | Logical data link (like TCP for Bluetooth)  | Multiplexing data                 |
+| **SDP**                   | Service Discovery Protocol                  | Finds available services          |
+| **RFCOMM**                | Emulates serial ports                       | Used for file transfer, tethering |
+| **Security Manager (SM)** | Handles authentication, encryption, pairing | Manages keys and permissions      |
+
+🧩 5. Bluetooth Security Modes & Levels<br>
+Bluetooth devices can operate in different security modes, which define when and how encryption/authentication occur.<br>
+| **Mode**   | **Description**                                           | **Used In**       | **Security** |
+| ---------- | --------------------------------------------------------- | ----------------- | ------------ |
+| **Mode 1** | No security                                               | Early Bluetooth   | ❌ Unsafe     |
+| **Mode 2** | Security at service level                                 | Bluetooth 1.x–2.x | ⚠️ Weak      |
+| **Mode 3** | Security at link level (authentication before connection) | Bluetooth 2.1+    | ✅ Better     |
+| **Mode 4** | Secure Simple Pairing (SSP), encryption mandatory         | Bluetooth 2.1+    | ✅✅ Strong    |
+
+🧠 6. Bluetooth Pairing Methods and Security Levels<br>
+| **Pairing Method**                         | **How it Works**                            | **Example Devices** | **Security Risk**    |
+| ------------------------------------------ | ------------------------------------------- | ------------------- | -------------------- |
+| **Just Works**                             | No authentication (no PIN)                  | Speakers, toys      | ❌ Vulnerable to MITM |
+| **PIN / Passkey Entry**                    | User enters PIN (e.g., 0000, 1234)          | Old phones          | ⚠️ Weak (guessable)  |
+| **Numeric Comparison**                     | User confirms matching code on both devices | Smartphones         | ✅ Good               |
+| **Out-of-Band (OOB)**                      | Uses NFC or QR code for key exchange        | Smart locks, IoT    | ✅✅ Strong            |
+| **LE Secure Connections (Bluetooth 4.2+)** | Uses ECDH (Elliptic Curve Diffie–Hellman)   | Modern devices      | ✅✅✅ Very strong      |
+
+🔍 7. Common Bluetooth Attacks in Cybersecurity<br>
+| **Attack Name**                           | **Description**                                                | **Impact**          |
+| ----------------------------------------- | -------------------------------------------------------------- | ------------------- |
+| **Bluejacking**                           | Sending unsolicited messages to nearby devices                 | Annoyance / prank   |
+| **Bluesnarfing**                          | Unauthorized data access (contacts, files)                     | Privacy breach      |
+| **Bluebugging**                           | Attacker gains full control of the device                      | Critical compromise |
+| **Blueborne (2017)**                      | Remote code execution via Bluetooth stack vulnerability        | Severe risk         |
+| **Bluetooth Impersonation Attack (BIAS)** | Exploits flaws in authentication to impersonate trusted device | MITM                |
+| **KNOB Attack**                           | Weakens encryption during pairing negotiation                  | Data interception   |
+
+💡 Mitigation:<br>
+- Always update firmware.
+- Turn off Bluetooth when not in use.
+- Use Bluetooth 4.2 or higher for LE Secure Connections.
+
+⚔️ 8. Comparison: Bluetooth Versions & Security Features <br>
+| Version       | Encryption                     | Pairing Method       | Known Vulnerabilities     | Security Strength |
+| ------------- | ------------------------------ | -------------------- | ------------------------- | ----------------- |
+| **1.x – 2.0** | E0 stream cipher (weak)        | PIN-based            | Bluejacking, Bluesnarfing | ❌ Weak            |
+| **2.1 + EDR** | E0 + SSP                       | Numeric / Just Works | Bluebugging               | ⚠️ Moderate       |
+| **4.0 (BLE)** | AES-CCM 128-bit                | Legacy pairing       | MITM (if Just Works)      | ⚠️ Moderate       |
+| **4.2**       | AES-CCM + LE Secure Connection | ECDH key exchange    | Rare                      | ✅ Strong          |
+| **5.0+**      | AES-CCM + Improved ECDH        | Numeric / OOB        | Hard to exploit           | ✅✅ Very strong    |
+
+🧭 9. Real-World Application Examples<br>
+| **Use Case**           | **Example**                    | **Security Mechanism**               |
+| ---------------------- | ------------------------------ | ------------------------------------ |
+| **Wireless Audio**     | AirPods, Bluetooth speakers    | Pairing + AES encryption             |
+| **IoT Devices**        | Smart lights, sensors          | BLE with ECDH key exchange           |
+| **Wearables**          | Smartwatches, fitness trackers | LE Secure Connections                |
+| **Healthcare Devices** | Blood pressure monitors        | Strong encryption (HIPAA compliance) |
+| **Automotive**         | Car hands-free, keyless entry  | OOB or NFC pairing                   |
+
+🧠 10. Real-World Analogy for Security Levels<br>
+| Bluetooth Version   | Analogy                                          | Security Level |
+| ------------------- | ------------------------------------------------ | -------------- |
+| **1.x (WEP-like)**  | Everyone uses the same door PIN (e.g., 1234)     | ❌ Weak         |
+| **2.x (WPA-like)**  | Each person has a different PIN, but it’s simple | ⚠️ Better      |
+| **4.x (WPA2-like)** | Devices use digital handshake + encryption       | ✅ Strong       |
+| **5.x (WPA3-like)** | Devices use smart key exchange (ECDH)            | ✅✅ Very strong |
+
+✅ 11. In Short<br>
+Bluetooth enables wireless communication between nearby devices, but without proper encryption and authentication, it’s like leaving your phone unlocked in a crowded café.
+Modern versions (4.2, 5.x) use AES encryption, ECDH key exchange, and Secure Simple Pairing to make Bluetooth connections private, authenticated, and tamper-resistant.<br>
+
+🧩 12. Quick Security Summary Table<br>
+| Feature           | Old Bluetooth (1.x–2.x) | New Bluetooth (4.2–5.x)     |
+| ----------------- | ----------------------- | --------------------------- |
+| Encryption        | Weak (E0)               | AES-128 (strong)            |
+| Key Exchange      | Static PIN              | ECDH (dynamic)              |
+| Authentication    | Basic                   | Secure Simple Pairing (SSP) |
+| Attack Resistance | Low                     | High                        |
+| Recommended?      | ❌ No                    | ✅ Yes                       |
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 - https://www.geeksforgeeks.org/computer-networks/difference-between-pgp-and-s-mime/
 - https://www.geeksforgeeks.org/computer-networks/difference-between-arp-and-rarp/
 - https://www.geeksforgeeks.org/computer-networks/wifi-protected-access-wpa/
