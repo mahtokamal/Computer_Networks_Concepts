@@ -1167,6 +1167,359 @@ Modern versions (4.2, 5.x) use AES encryption, ECDH key exchange, and Secure Sim
 - https://www.esecurityplanet.com/trends/the-best-security-for-wireless-networks/#:~:text=WEP%2C%20WPA%2C%20WPA2%2C%20and,encryption%20and%20enhanced%20attack%20defense.
 - https://www.mokosmart.com/guide-on-different-bluetooth-versions/
 - https://www.rtings.com/headphones/learn/bluetooth-versions-comparison-profiles
-## 2.7
-##
+## 2.7 Others
+**🌐 1. RIP (Routing Information Protocol)** <br>
+🔹RIP is a distance-vector routing protocol that finds the best route in a network based on hop count (maximum 15 hops).<br>
+💡 Analogy<br>
+Imagine a delivery driver who always picks the route with the fewest stoplights, even if it’s not the fastest, that’s RIP.<br>
+
+⚙️ Uses<br>
+Used in small networks or lab environments for basic route sharing.<br>
+
+🔐 Cybersecurity<br>
+Sends routing updates in plaintext (no authentication by default).<br>
+Vulnerable to route injection or spoofing attacks.<br>
+✅ Use RIP v2 with MD5 authentication to improve security.<br>
+
+**🧭 2. OSPF (Open Shortest Path First)** <br
+🔹A link-state routing protocol that uses Dijkstra’s algorithm to find the shortest path.<br>
+
+💡 Analogy<br>
+Think of a GPS that calculates the fastest route using live traffic data, not just fewest lights.<br>
+
+⚙️ Uses<br>
+Used in large enterprise LANs for efficient, fast convergence.<br>
+
+🔐 Cybersecurity<br>
+Supports authentication (MD5, SHA).<br>
+Vulnerable to LSA spoofing if not secured.<br>
+✅ Use OSPF authentication + area segmentation (backbone areas).<br>
+
+**🌍 3. BGP (Border Gateway Protocol)** <br>
+🔹BGP controls how data is routed between different organizations (Autonomous Systems) on the Internet.<br>
+
+💡 Analogy<br>
+BGP is like airline route planning between countries — each country (ISP) advertises which airports (networks) it can reach.<br>
+
+⚙️ Uses<br>
+Used by ISPs and data centers to manage Internet routing.<br>
+
+🔐 Cybersecurity<br>
+Vulnerable to BGP hijacking / route leaks.<br>
+✅ Use RPKI (Resource Public Key Infrastructure) and BGPsec for route validation.<br>
+
+**🚀 4. EIGRP (Enhanced Interior Gateway Routing Protocol)** <br>
+🔹A Cisco-proprietary hybrid protocol combining distance-vector + link-state features.<br>
+
+💡 Analogy<br>
+A smart courier system that not only counts stoplights (like RIP) but also considers road speed and traffic (like OSPF).<br>
+
+⚙️ Uses<br>
+Used in Cisco-based enterprise networks.<br>
+
+🔐 Cybersecurity<br>
+Supports MD5/SHA authentication.<br>
+Less vulnerable than RIP due to multicast and neighbor authentication.<br>
+
+💬 5. NetBIOS (Network Basic Input/Output System)<br>
+🔹Allows Windows devices to communicate and share files/printers over a LAN (uses ports 137–139).<br>
+
+💡 Analogy<br>
+Think of neighbors shouting to each other by name across a street to share resources — that’s NetBIOS name broadcasting.<br>
+
+⚙️ Uses<br>
+Legacy systems, Windows file sharing.<br>
+
+🔐 Cybersecurity<br>
+Sends data in plaintext.<br>
+Exploited for enumeration and lateral movement.<br>
+🚫 Disable NetBIOS in modern networks or block ports 137–139.<br>
+
+**⏰ 6. NTP (Network Time Protocol)** <br>
+🔹Synchronizes clocks between computers across networks (UDP port 123).<br>
+
+💡 Analogy<br>
+Like everyone in an office setting their watch to the same atomic clock.<br>
+
+⚙️ Uses<br>
+Used in servers, routers, authentication systems (Kerberos).<br>
+🔐 Cybersecurity<br>
+Vulnerable to amplification DDoS attacks or time spoofing.<br>
+✅ Use authenticated NTP (NTPv4) and restrict IP access.<br>
+
+**👥 7. IGMP (Internet Group Management Protocol)** <br>
+🔹Manages multicast group memberships on local networks (e.g., IPTV).<br>
+
+💡 Analogy<br>
+Imagine signing up for a mailing list — only subscribers receive the newsletter.<br>
+
+⚙️ Uses<br>
+Used for multicast streaming, video conferencing.<br>
+
+🔐 Cybersecurity<br>
+Vulnerable to spoofing or flooding attacks.<br>
+✅ Use IGMP snooping on switches to prevent abuse.<br>
+
+**🧩 8. VLAN (Virtual Local Area Network)** <br>
+🔹Divides a physical LAN into multiple virtual, isolated networks at the switch level.<br>
+
+💡 Analogy<br>
+Imagine one big office divided into separate departments with glass walls — each can’t interfere with the other.<br>
+
+⚙️ Uses<br>
+Used for network segmentation — e.g., separating HR, Finance, and Guest Wi-Fi.<br>
+
+🔐 Cybersecurity<br>
+✅ Reduces attack spread.<br>
+⚠️ Vulnerable to VLAN hopping attacks if trunk ports misconfigured.<br>
+👉 Always use 802.1Q tagging + port security.<br>
+
+💳 9. ATM (Asynchronous Transfer Mode)<br>
+🔹A high-speed network technology that transmits data in fixed-size cells (53 bytes).<br>
+
+💡 Analogy<br>
+Like a factory conveyor belt carrying identical boxes — each box holds part of the message.<br>
+
+⚙️ Uses<br>
+Used in telecom backbones, video conferencing, and banking networks.<br>
+🔐 Cybersecurity<br>
+Limited security — encryption often external.<br>
+✅ Now replaced by MPLS and IP-based transport.<br>
+
+**🎙️ 10. RTP (Real-time Transport Protocol)** <br>
+🔹Used to deliver audio/video data over IP networks (VoIP, video calls).<br>
+
+💡 Analogy<br>
+Like a live radio broadcast — small delays are okay, but timing is crucial.<br>
+
+⚙️ Uses<br>
+Used in VoIP, Zoom, Skype, streaming.<br>
+
+🔐 Cybersecurity<br>
+⚠️ Vulnerable to eavesdropping if unencrypted.<br>
+✅ Use SRTP (Secure RTP) for encrypted media streams.<br>
+
+**🪢 11. SCTP (Stream Control Transmission Protocol)** <br>
+🔹A transport-layer protocol combining the reliability of TCP and the speed of UDP.<br>
+
+💡 Analogy<br>
+Think of it as a truck with multiple trailers — it can deliver several message streams at once without losing any.<br>
+
+⚙️ Uses<br>
+Used in telecom signaling (SS7 over IP) and IoT systems.<br>
+
+🔐 Cybersecurity<br>
+✅ Resistant to SYN flooding (multi-homing support).<br>
+⚠️ Rarely targeted but still needs encryption at higher layers.<br>
+
+**⚙️ 12. RPC (Remote Procedure Call)** <br>
+🔹Allows a program to execute code on another computer as if it were local.<br>
+
+💡 Analogy<br>
+Like ordering pizza over the phone — you tell someone what to do remotely, and they do it.<br>
+
+⚙️ Uses<br>
+Used in Windows services, NFS, and distributed applications.<br>
+
+🔐 Cybersecurity<br>
+⚠️ Vulnerable to unauthorized code execution if misconfigured.<br>
+✅ Use firewall rules and RPC over TLS.<br>
+
+**🔌 13. Socket(IP + Port = Socket)** <br>
+🔹An endpoint for sending or receiving data across a network (IP + Port = Socket).
+
+💡 Analogy <br>
+A plug socket in a wall — multiple devices (apps) can plug into different ports of the same machine.<br>
+
+⚙️ Uses<br>
+Used by all networked applications (web, email, games, etc.).<br>
+
+🔐 Cybersecurity<br>
+⚠️ Open sockets can expose services to attack (e.g., port scanning).<br>
+✅ Close unused ports; use firewalls and port filtering.<br>
+
+🌎 14. WHOIS<br>
+🔹A protocol for querying domain registration details (TCP port 43).<br>
+
+💡 Analogy<br>
+Like a phone book for the Internet — it tells you who owns a domain or IP.<br>
+
+⚙️ Uses<br>
+Used in cyber forensics and domain investigations.<br>
+
+🔐 Cybersecurity<br>
+⚠️ Can expose personal data if not privacy-protected.<br>
+✅ Use WHOIS privacy and GDPR compliance.<br>
+
+**💬 15. IRC (Internet Relay Chat)** <br>
+🔹A text-based real-time chat protocol (TCP ports 6660–6669).<br>
+
+💡 Analogy<br>
+Like an old-school group chat room — everyone connects to a shared channel.<br>
+
+⚙️ Uses<br>
+Used for live collaboration, gaming communities, and botnet command-and-control (C2).<br>
+
+🔐 Cybersecurity<br>
+⚠️ Commonly abused for malware C2 or data exfiltration.<br>
+✅ Monitor for IRC traffic in secure networks.<br>
+
+**🔍 Protocol Comparison Table (Summary)** <br>
+| Protocol    | Layer     | Purpose               | Real-World Analogy       | Security Concern    | Mitigation            |
+| ----------- | --------- | --------------------- | ------------------------ | ------------------- | --------------------- |
+| **RIP**     | Network   | Routing (small)       | Fewer stoplights         | Route spoofing      | Use v2 + MD5          |
+| **OSPF**    | Network   | Routing (large)       | GPS with live traffic    | LSA injection       | Auth + segmentation   |
+| **BGP**     | Network   | Internet routing      | Airline route planning   | BGP hijack          | RPKI/BGPsec           |
+| **EIGRP**   | Network   | Cisco routing         | Smart courier            | Misconfig attacks   | MD5 auth              |
+| **NetBIOS** | App       | File sharing          | Neighbors shouting names | Enumeration         | Disable ports 137–139 |
+| **NTP**     | App       | Time sync             | Same wall clock          | Time spoofing, DDoS | Auth NTPv4            |
+| **IGMP**    | Network   | Multicast mgmt        | Mailing list             | Flooding/spoofing   | IGMP snooping         |
+| **VLAN**    | Data link | Network segmentation  | Glass office walls       | VLAN hopping        | Port security         |
+| **ATM**     | Data link | High-speed cells      | Conveyor belt            | Weak encryption     | Use MPLS              |
+| **RTP**     | App       | Real-time audio/video | Live radio               | Eavesdropping       | SRTP                  |
+| **SCTP**    | Transport | Reliable streams      | Truck with trailers      | SYN floods          | Firewalls             |
+| **RPC**     | App       | Remote execution      | Order pizza remotely     | Code injection      | RPC over TLS          |
+| **Socket**  | Transport | Network endpoint      | Electric plug            | Port scanning       | Close unused ports    |
+| **WHOIS**   | App       | Domain registry info  | Phone book               | Data exposure       | Privacy shield        |
+| **IRC**     | App       | Chat rooms            | Public chat              | Botnet C2           | Network monitoring    |
+
+**🧠 Cybersecurity Takeaways** <br>
+
+- Routing protocols (RIP, OSPF, BGP, EIGRP)
+🔹 Vulnerable to route manipulation → Use authentication and encryption.<br>
+
+- Application protocols (NetBIOS, RPC, WHOIS, IRC)
+🔹 Common targets for enumeration, data exfiltration, or botnets.<br>
+
+- Transport protocols (RTP, SCTP)
+🔹 Focus on confidentiality and integrity → Use secure variants (SRTP, TLS).<br>
+
+- Infrastructure protocols (NTP, VLAN, IGMP)
+🔹 Small misconfigurations can lead to DDoS or privilege escalation.<br>
+
+✅ In Short:<br>
+These protocols are like the nervous system of the Internet — each has its job (talking, routing, sharing, or timing).<br>
+But without authentication, encryption, and configuration hygiene, attackers can manipulate, spy, or disrupt the network’s natural flow.<br>
+
+**🔄 1. IGMP (Internet Group Management Protocol)** <br>
+🔹IGMP manages multicast group memberships in IPv4 networks.<br>
+It allows devices to join or leave multicast groups so they receive specific network streams (like video broadcasts).<br>
+
+💡 Analogy<br>
+Think of IGMP like subscribing to a TV channel.<br>
+If you subscribe to “Sports Channel,” the router knows to forward that video stream only to you.<br>
+
+⚙️ Uses<br>
+IPTV and video conferencing<br>
+Multicast streaming<br>
+Online gaming<br>
+
+🔐 Cybersecurity<br>
+⚠️ Risks:<br>
+Attackers can send fake IGMP join/leave messages, causing flooding or DoS.<br>
+Unauthenticated, so anyone can “subscribe.”<br>
+
+✅ Mitigation:<br>
+Enable IGMP Snooping on switches.<br>
+Filter multicast traffic at routers/firewalls.<br>
+
+☎️ 2. ISDN (Integrated Services Digital Network)<br>
+🔹 ISDN is a set of communication standards for transmitting voice, video, and data over traditional telephone networks.<br>
+
+💡 Analogy<br>
+Like turning an old landline into a smart line — it can handle calls + internet + fax simultaneously over one connection.<br>
+
+⚙️ Uses<br>
+Early video conferencing and dial-up internet.<br>
+Still used in rural areas, PBX systems, and telephony backups.<br>
+
+🔐 Cybersecurity<br>
+⚠️ Risks:<br>
+Calls and data are unencrypted by default.<br>
+Vulnerable to eavesdropping and spoofing if tapped physically.<br>
+
+✅ Mitigation:<br>
+Use end-to-end encryption and migrate to VoIP/SIP systems.<br>
+
+**🔁Token Ring Protocol** <br>
+🔹Token Ring (developed by IBM) is a LAN protocol where computers are connected in a ring, and a token (a small data packet) circulates.<br>
+A computer can only send data when it holds the token, avoiding collisions.<br>
+
+💡 Analogy<br>
+Imagine a talking stick in a group discussion — only the person holding it can speak.<br>
+Once they’re done, they pass it to the next person.<br>
+
+⚙️ Uses<br>
+Used in legacy corporate LANs before Ethernet became dominant.<br>
+Still referenced in industrial control networks for deterministic communication.<br>
+
+🔐 Cybersecurity<br>
+⚠️ Risks:<br>
+Physical access can still lead to data sniffing.<br>
+No inherent encryption or authentication.<br>
+
+✅ Mitigation:<br>
+Use secure Ethernet with VLANs or modern network segmentation.<br>
+
+**🧠 Now Including IGMP, ISDN, and Token Ring in the Big Picture** <br>
+| Protocol       | Layer     | Purpose               | Real-World Analogy          | Security Concern  | Mitigation                    |
+| -------------- | --------- | --------------------- | --------------------------- | ----------------- | ----------------------------- |
+| **RIP**        | Network   | Basic routing         | Fewest stoplights           | Route spoofing    | RIP v2 + MD5                  |
+| **OSPF**       | Network   | Dynamic routing       | GPS with live traffic       | LSA injection     | Authentication                |
+| **BGP**        | Network   | Internet routing      | Airline route planning      | BGP hijack        | RPKI, BGPsec                  |
+| **EIGRP**      | Network   | Cisco routing         | Smart courier               | Misconfig attack  | MD5 auth                      |
+| **NetBIOS**    | App       | Windows sharing       | Neighbors shouting          | Enumeration       | Disable ports 137–139         |
+| **NTP**        | App       | Time sync             | Everyone’s watch same clock | Time spoofing     | Authenticated NTP             |
+| **IGMP**       | Network   | Multicast management  | Subscribing to TV channels  | Flooding/spoofing | IGMP snooping                 |
+| **VLAN**       | Data Link | Segmentation          | Glass-walled offices        | VLAN hopping      | Port security                 |
+| **ATM**        | Data Link | High-speed transfer   | Conveyor belt of boxes      | Weak encryption   | Use MPLS                      |
+| **RTP**        | App       | Real-time streaming   | Live radio                  | Eavesdropping     | SRTP                          |
+| **SCTP**       | Transport | Reliable multi-stream | Truck with trailers         | SYN floods        | Firewalls                     |
+| **RPC**        | App       | Remote code execution | Order pizza remotely        | Code injection    | TLS + Firewall                |
+| **Socket**     | Transport | Data endpoint         | Electric plug               | Port scanning     | Close unused ports            |
+| **WHOIS**      | App       | Domain registry       | Internet phonebook          | Info leakage      | Privacy shield                |
+| **IRC**        | App       | Real-time chat        | Public chatroom             | Botnet C2         | Monitoring                    |
+| **ISDN**       | Data Link | Voice/data over phone | Smart landline              | Eavesdropping     | Encryption or migrate to VoIP |
+| **Token Ring** | Data Link | LAN access control    | Talking stick               | Physical tapping  | Secure physical access        |
+
+**🔐 Cybersecurity Viewpoint** <br>
+| Category                          | Includes                  | Key Risk                     | Security Practice                  |
+| --------------------------------- | ------------------------- | ---------------------------- | ---------------------------------- |
+| **Routing Protocols**             | RIP, OSPF, BGP, EIGRP     | Route manipulation           | Use auth (MD5/SHA), secure updates |
+| **Transport/Session Protocols**   | SCTP, RTP, RPC, Socket    | Data integrity & spoofing    | TLS, SRTP, filtering               |
+| **Management/Control Protocols**  | NTP, IGMP, VLAN           | Flooding, spoofing           | Auth & access control              |
+| **Legacy Systems**                | ISDN, Token Ring, NetBIOS | Eavesdropping, outdated tech | Replace or isolate                 |
+| **Information/Service Protocols** | WHOIS, IRC                | Data exposure, botnet C2     | Monitor + privacy                  |
+
+**💡 Analogy Summary (Memorization Hack**) <br>
+| Protocol   | Analogy                                 |
+| ---------- | --------------------------------------- |
+| RIP        | Choosing the route with fewest lights   |
+| OSPF       | GPS recalculating best route            |
+| BGP        | Airlines advertising flight routes      |
+| EIGRP      | Smart courier system                    |
+| NetBIOS    | Neighbors shouting to share files       |
+| NTP        | Everyone syncing to the same wall clock |
+| IGMP       | Subscribing to a TV channel             |
+| VLAN       | Office departments with glass walls     |
+| ATM        | Conveyor belt with identical boxes      |
+| RTP        | Live radio broadcast                    |
+| SCTP       | Truck with multiple trailers            |
+| RPC        | Ordering pizza remotely                 |
+| Socket     | Power plug in a wall                    |
+| WHOIS      | Internet phone book                     |
+| IRC        | Chat room conversations                 |
+| ISDN       | Smart telephone line                    |
+| Token Ring | Talking stick in a meeting              |
+
+**🧩 Final Takeaway for Cybersecurity Interviews** <br>
+✅ Always mention: <br>
+Layer (OSI) → Shows depth of understanding <br>
+Purpose → Why it exists <br>
+Vulnerability → How attackers might exploit it <br>
+Mitigation → How to defend <br>
+
+Example interview response: <br>
+“OSPF is a link-state routing protocol that uses Dijkstra’s algorithm. It’s like a GPS recalculating the best path. In cybersecurity, it can be attacked via LSA injection, so we enable authentication and area segmentation to secure it.” <br>
+## 2.8 
     
