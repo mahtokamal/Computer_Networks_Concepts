@@ -372,7 +372,7 @@
     last, the email will be shown on David’s email client.
 
     
-    Layer 7: Application layer 
+    Layer 7: Application layer (Data = Data)
     
              Function - The Application Layer (Layer 7) is the topmost layer of the OSI model and provides the
                         interface between the network services and end-user applications. This layer enables 
@@ -449,7 +449,7 @@
                                       Regular Security Audits: Helps identify potential vulnerabilities in web
                                       applications and closes security gaps.
     
-    Layer 6: Presentation layer
+    Layer 6: Presentation layer (Data = Data)
     
              Function - The Presentation Layer (Layer 6) is responsible for data formatting, translation, 
                         encryption, and compression, ensuring that data is presented to the Application Layer
@@ -525,7 +525,7 @@
                                       Intrusion Detection Systems (IDS): Monitors for suspicious activities and
                                       alerts administrators to potential MITM attacks or data tampering attempts.
     
-    Layer 5: Session layer ()
+    Layer 5: Session layer (Data = Data)
     
              Function - The Session Layer (Layer 5) is responsible for establishing, maintaining, and 
                         terminating communication sessions between applications on different devices. 
